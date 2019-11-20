@@ -1,0 +1,40 @@
+&.block-splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    .splash-bg {
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .splash-img {
+        display: block;
+        position: relative;
+        width: fit-content;
+        filter: grayscale(100%);
+        transition: all .3s ease;
+        z-index: 2;
+    }
+
+    &:hover {
+        .splash-img {
+            filter: grayscale(0%);
+            transition: all .3s ease;
+        }
+    }
+}
+
+&.with-splash {
+    &:hover {
+        .splash-img {
+            filter: grayscale(0%);
+            transition: all .3s ease;
+        }
+    }
+}

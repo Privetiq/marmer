@@ -1,0 +1,197 @@
+&.block-form {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10%;
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 550px;
+        width: 100%;
+        border-radius: 14px;
+
+        &.banner-form {
+            background: url(../img/form-bg1.png) no-repeat center top;
+            background-size: auto 100%;
+            box-shadow: 0px 16px 37.6px 2.4px rgba(69, 83, 94, 0.17),0px 16px 34px 6px rgba(69, 83, 94, 0.22);
+        }
+
+        .error {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #172330;
+            font: 600 11px $bf;
+        }
+
+        input {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            border: 1px solid #cad6de;
+            background: $wc;
+            color: #172330;
+            font: 600 14px/48px $bf;
+            padding: 0 15px;
+            margin-bottom: 15px;
+
+            &::placeholder {
+                color: #172330;
+                font: 600 14px/48px $bf;
+            }
+        }
+
+        textarea {
+            display: block;
+            position: relative;
+            width: 100%;
+            min-height: 100px;
+            border-radius: 3px;
+            border: 1px solid #cad6de;
+            background: $wc;
+            color: #172330;
+            font: 600 14px/48px $bf;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            resize: none;
+
+            &::placeholder {
+                color: #172330;
+                font: 600 14px/48px $bf;
+            }
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            flex: 1 1 100%;
+            margin: 0 -10px;
+
+            .form-col {
+                position: relative;
+                flex: 1 1;
+                padding: 0 10px;
+            }
+
+            &:last-child {
+                .form-col {
+                    input, textarea {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .form-title {
+            flex: 1 1 100%;
+            color: $wc;
+            font: 600 28px/36px $bf;
+            padding: 50px 40px;
+            overflow: hidden;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+
+            span {
+                position: relative;
+                width: fit-content;
+                color: $wc;
+                font: 600 28px/36px $bf;
+                margin-left: 5px;
+
+                &:after {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 6px;
+                    left: 0;
+                    bottom: 0;
+                    background: #FFD784;
+                }
+            }
+        }
+
+        .form-body {
+            flex: 1 1 100%;
+            margin: 0 -10px;
+            
+            .form-body-box {
+                position: relative;
+                padding: 50px;
+                border-radius: 6px;
+                background: url(../img/form-body-bg1.png) no-repeat center center;
+                box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
+
+                &:after {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    height: 6px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 0px;
+                    background: #F1C57F;
+                }
+            }
+        }
+
+        .form-button {
+            flex: 1 1 100%;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            overflow: hidden;
+
+            .stl-btn1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                color: $wc;
+                font: 600 20px $bf;
+                text-transform: uppercase;
+                padding: 30px 40px;
+                cursor: pointer;
+                @include trans;
+
+                .icon {
+                    margin-left: 5px;
+                    @include trans;
+
+                    svg {
+                        path {
+                            fill: $wc;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: #4d5a64;
+                    @include trans;
+
+                    .icon {
+                        margin-left: 10px;
+                        @include trans;
+                    }
+                }
+            }
+        }
+    }
+
+    &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 760px;
+        height: 761px;
+        top: 50%;
+        left: 50%;
+        background: url(../img/form-decoration.png) no-repeat center center;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}

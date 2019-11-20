@@ -1,0 +1,86 @@
+&.block-banner {
+    position: relative;
+    padding: 200px 15px 0;
+    z-index: 1;
+
+    .banner-wrapper {
+        display: flex;
+        max-width: 1360px;
+        width: 100%;
+        min-height: 70vh;
+        margin: 0 auto;
+
+        .banner-info {
+            flex: 0 1 60%;
+
+            .main-title {
+                flex: 1 1;
+                color: $wc;
+                font: 700 48px $bf;
+                margin-bottom: 50px;
+            }
+
+            .advantages-markers {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                flex: 1 1 100%;
+
+                .marker {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: fit-content;
+                    padding: 15px;
+                    border-radius: 30px;
+                    background: #ffffff;
+                    margin-right: 25px;
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                    @include trans;
+
+                    span {
+                        color: $bc;
+                        font: 700 16px/30px $bf;
+                    }
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+
+                        svg {
+                            width: 23px;
+                            height: 23px;
+
+                            path, polygon {
+                                fill: #FFD784;
+                                @include trans;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: #FFD784;
+                        @include trans;
+
+                        .icon {
+                            svg {
+                                path, polygon {
+                                    fill: #000000;
+                                    @include trans;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner-form {
+            position: relative;
+            flex: 0 1 40%;
+        }
+    }
+}

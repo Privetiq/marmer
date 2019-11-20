@@ -12,6 +12,9 @@
 html {
     
     .block {
-        
+        @import 'blocks/block-splash';
+        @import 'blocks/block-form';
+
+        @import 'sections/block-banner';
     }
 }

@@ -7,6 +7,14 @@ head
 
     //- fonts (roboto)
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700,700italic,500italic,500,400italic,300,100italic,100,300italic&subset=latin,cyrillic,latin-ext', rel='stylesheet', type='text/css')
+    link(href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap", rel="stylesheet")
+    //- material design icons (by google)
+    if (qdt_c.platform.libs.mdi)
+        link(rel="stylesheet", href="assets/dist/mdi/css/materialdesignicons.min.css")
+
+    //- bootstrap 3
+    if (qdt_c.platform.libs.bootstrap_3)
+        link(rel="stylesheet", href="assets/dist/bootstrap/css/bootstrap.min.css")
 
     //- custom style
     link(rel="stylesheet", href="assets/css/style.min.css")

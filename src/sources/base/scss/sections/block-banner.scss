@@ -3,6 +3,19 @@
     padding: 200px 15px 0;
     z-index: 1;
 
+    .bg-decoration {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+
+        img {
+            width: 100%;
+        }
+    }
+
     .banner-wrapper {
         display: flex;
         max-width: 1360px;

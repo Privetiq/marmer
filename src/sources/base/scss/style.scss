@@ -11,10 +11,20 @@
 
 html {
     
+    main {
+        overflow: hidden;
+    }
+    
     .block {
         @import 'blocks/block-splash';
         @import 'blocks/block-form';
 
+        @import 'sections/block-header';
+        @import 'sections/block-footer';
         @import 'sections/block-banner';
+        @import 'sections/block-about';
+        @import 'sections/block-video';
     }
 }
+
+@import 'includes/slick';

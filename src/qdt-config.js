@@ -23,6 +23,12 @@ module.exports = {
             "assets": [{
                 "from": "resources/assets/**/*",
                 "to": "assets"
+            }, {
+                "from": "../../node_modules/slick-carousel/slick/slick.min.js",
+                "to": "assets/dist/slick"
+            }, {
+                "from": "../../node_modules/slick-carousel/slick/slick.scss",
+                "to": "../../src/sources/base/scss/includes"
             }],
             // browsersync configurations (ex: ip, port and path)
             "server": false,

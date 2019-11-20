@@ -76,16 +76,27 @@ block content
 
     section.block.block-method
         .method-wrapper
-            .main-title
-            .subtitle
+            .main-title Onze werkwijze
+            .subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+            
+            mixin step(cls, bgsrc, imgsrc, number, title, desc)
+                .step-line(class=cls)
+                    .step-block
+                        .icon-block
+                            .icon-bg
+                                img(src=bgsrc, alt="")
+                            .icon-image
+                                img(src=imgsrc, alt="")
+                        .info-block
+                            .top-line
+                                .number=number
+                                .title=title
+                            .desc=desc
 
             .steps-wrapper
-                .step-block
-                    .icon-block
-                        
-                    .info-block
-                .step-block
-                .step-block
+                +step('right', 'assets/img/step-icon-bg1.png', 'assets/img/step-icon1.png', '1', 'Neem vrijblijvend contact', 'Bel of mail ons vrijblijvend. Wij bespreken telefonisch de conditie van uw vloer en aan de hand daarvan geven wij u een prijsindicatie en informatie over hoe wij uw vloer opknappen.')
+                +step('left', 'assets/img/step-icon-bg2.png', 'assets/img/step-icon2.png', '2', 'Gratis proefstuk en prijsopgave', 'Wij komen vrijblijvend naar u toe, op locatie inventariseren wij de werkzaamheden om vervolgens een exacte prijs te berekenen. Daarbij demonstreren wij gratis een proefbehandeling van 2m² op de door u gekozen plek.')
+                +step('right', 'assets/img/step-icon-bg3.png', 'assets/img/step-icon3.png', '3', 'Wij gaan direct aan de slag!', 'Bent u tevreden over het proefstuk? Dan starten wij gelijk met de werkzaamheden en heeft u binnen één dag een vloer als nieuw. Is het proefstuk niet naar wens, dan betaalt u helemaal niets!')
 
 
 

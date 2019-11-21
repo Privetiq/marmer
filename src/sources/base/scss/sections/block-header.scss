@@ -16,6 +16,24 @@
         @include trans;
 
         .header-wrapper {
+            .header-logo {
+                img {
+                    &.white {
+                        display: none;
+                        visibility: hidden;
+                        opacity: 0;
+                        @include trans;
+                    }
+
+                    &.black {
+                        display: block;
+                        visibility: visible;
+                        opacity: 1;
+                        @include trans;
+                    }
+                }
+            }
+
             .header-container {
                 .header-menu {
                     ul {
@@ -41,6 +59,26 @@
             img {
                 max-width: 174px;
                 width: 100%;
+
+                &.white {
+                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+                    @include trans;
+                }
+
+                &.black {
+                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
+                    @include trans;
+
+                    &.visible {
+                        display: block !important;
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                    }
+                }
             }
         }
 

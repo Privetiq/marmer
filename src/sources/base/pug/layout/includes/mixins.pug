@@ -1,0 +1,43 @@
+//-text block
+mixin text(pimg=false, title, desc, src)
+    section.block.block-text
+        .text-wrapper
+            .title=title
+            .desc=desc
+            if (pimg)
+                .preview-image
+                    img(src=src, alt="mixin image")
+            else
+                //-nothing
+
+mixin advmark(name)
+    .marker
+        i.icon
+            include ../../../resources/assets/img/checkbox.svg
+        span=name
+
+mixin step(cls, bgsrc, imgsrc, number, title, desc)
+    .step-line(class=cls)
+        .step-block
+            .icon-block
+                .icon-bg
+                    img(src=bgsrc, alt="")
+                .icon-image
+                    img(src=imgsrc, alt="")
+            .info-block
+                .top-line
+                    .number=number
+                    .title=title
+                .desc=desc
+
+mixin slide(title)
+    .slide
+        .title=title
+        .inner-wrapper
+            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+mixin stone(src, name)
+    li
+        .img
+            img(src=src, alt="stone preview")
+        .name=name

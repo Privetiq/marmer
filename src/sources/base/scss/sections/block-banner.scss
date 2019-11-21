@@ -1,6 +1,6 @@
 &.block-banner {
     position: relative;
-    padding: 200px 15px 0;
+    padding: 200px 15px 80px;
 
     .bg-decoration {
         display: block;
@@ -93,6 +93,12 @@
         .banner-form {
             position: relative;
             flex: 0 1 40%;
+
+            .block-form {
+                position: absolute;
+                top: 0;
+                left: 10%;
+            }
         }
     }
 }

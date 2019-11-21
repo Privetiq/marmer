@@ -13,17 +13,13 @@ block content
         .banner-wrapper
             .banner-info
                 .main-title Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer
-                mixin advmark(name)
-                    .marker
-                        i.icon
-                            include ../resources/assets/img/checkbox.svg
-                        span=name
                 .advantages-markers
                     +advmark('Stofvrije werkwijze')
                     +advmark('30 jaar ervaring')
                     +advmark('Landelijk opererend')
                     +advmark('Gratis proefstuk op locatie')
                     +advmark('Meubilair kan in huis blijven ')
+
             .banner-form
                 .block.block-form
                     form.form.banner-form(action="#")
@@ -53,12 +49,7 @@ block content
                                 i.icon
                                     include ../resources/assets/img/arrow-right.svg
 
-    section.block.block-about
-        .about-wrapper
-            .main-title Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer
-            .desc Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.
-            .preview-image
-                img(src="assets/img/preview-image1.jpg", alt="preview image")
+    +text(true, 'Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer', 'Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.', 'assets/img/preview-image1.jpg')
 
     section.block.block-relation
         .relation-wrapper
@@ -71,9 +62,7 @@ block content
                         i.icon
                             include ../resources/assets/img/arrow-right.svg
 
-    section.block.block-text
-        .text-wrapper
-            .text Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.
+    +text(false, '', 'Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.', '')
 
     section.block.block-video.with-splash
         .block.block-splash
@@ -96,27 +85,13 @@ block content
         .method-wrapper
             .main-title Onze werkwijze
             .subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
-            
-            mixin step(cls, bgsrc, imgsrc, number, title, desc)
-                .step-line(class=cls)
-                    .step-block
-                        .icon-block
-                            .icon-bg
-                                img(src=bgsrc, alt="")
-                            .icon-image
-                                img(src=imgsrc, alt="")
-                        .info-block
-                            .top-line
-                                .number=number
-                                .title=title
-                            .desc=desc
 
             .steps-wrapper
                 +step('right', 'assets/img/step-icon-bg1.png', 'assets/img/step-icon1.png', '1', 'Neem vrijblijvend contact', 'Bel of mail ons vrijblijvend. Wij bespreken telefonisch de conditie van uw vloer en aan de hand daarvan geven wij u een prijsindicatie en informatie over hoe wij uw vloer opknappen.')
                 +step('left', 'assets/img/step-icon-bg2.png', 'assets/img/step-icon2.png', '2', 'Gratis proefstuk en prijsopgave', 'Wij komen vrijblijvend naar u toe, op locatie inventariseren wij de werkzaamheden om vervolgens een exacte prijs te berekenen. Daarbij demonstreren wij gratis een proefbehandeling van 2m² op de door u gekozen plek.')
                 +step('right', 'assets/img/step-icon-bg3.png', 'assets/img/step-icon3.png', '3', 'Wij gaan direct aan de slag!', 'Bent u tevreden over het proefstuk? Dan starten wij gelijk met de werkzaamheden en heeft u binnen één dag een vloer als nieuw. Is het proefstuk niet naar wens, dan betaalt u helemaal niets!')
 
-    section.block.block-about2
+    section.block.block-about
         .about-wrapper
             .inner-wrapper
                 .about-block
@@ -153,11 +128,6 @@ block content
                 span vertellen
 
             .reviews-slider-container
-                mixin slide(title)
-                    .slide
-                        .title=title
-                        .inner-wrapper
-                            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 .reviews-slider
                     +slide('Abraham Lincoln, Function of this great person')
                     +slide('Bob Marley, Function of this great person')
@@ -187,21 +157,37 @@ block content
                         .title Wij komen vrijblijvend langs voor een offerte en advies!
                         .number BEL NU: 085 800 0007
 
-    section.block.block-text
-        .text-wrapper
-            .title Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer
-            .text Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.
+    section.block.block-demonstration
+        .demonstration-wrapper
+            .block.block-form
+                form.form.demo-form(action="#")
+                    .form-body
+                        .form-body-box
+                            .form-title
+                                | Boek een
+                                span grati
+                                | demonstratie
+                            
+                            .form-subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+
+                            .form-row
+                                .form-col
+                                    input(type="text", name="fullname", placeholder="Full Name")
+                                    .error Please, enter correct name
+                                .form-col
+                                    input(type="text", name="email", placeholder="Email")
+                                    .error Please, enter correct email
+                                .form-col
+                                    button(type="submit")
+                                        | Verzenden
+                                        i.icon
+                                            include ../resources/assets/img/arrow-right.svg
+
+    +text(false, 'Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer', 'Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.', '')
 
     section.block.block-stones
         .stones-wrapper
             .main-title Wij onderhouden de volgende natuurstenen 
-
-            mixin stone(src, name)
-                li
-                    .img
-                        img(src=src, alt="stone preview")
-                    .name=name
-
             ul.stone-block
                 +stone('assets/img/stone1.jpg', 'Marmer')
                 +stone('assets/img/stone2.jpg', 'Traverti')

@@ -147,6 +147,12 @@
                         border-bottom-right-radius: 12px;
                     }
 
+                    svg {
+                        path {
+                            fill: #192535;
+                        }
+                    }
+
                     &:hover {
                         background: #F5F5F5;
                         @include trans;

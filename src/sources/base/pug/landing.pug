@@ -143,20 +143,6 @@ block content
                     .slider-control.slider-next
                         include ../resources/assets/img/arrow-down.svg
 
-    section.block.block-quote
-        .block.block-splash
-            .splash-bg
-                img(src="assets/img/splash-bg3.png", alt="splash background")
-                
-        .quote-wrapper
-            .quote-container
-                .inner-box
-                    .icon
-                        include ../resources/assets/img/diamant.svg
-                    .info
-                        .title Wij komen vrijblijvend langs voor een offerte en advies!
-                        .number BEL NU: 085 800 0007
-
     section.block.block-demonstration
         .demonstration-wrapper
             .block.block-form
@@ -170,18 +156,19 @@ block content
                             
                             .form-subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
 
-                            .form-row
-                                .form-col
-                                    input(type="text", name="fullname", placeholder="Full Name")
-                                    .error Please, enter correct name
-                                .form-col
-                                    input(type="text", name="email", placeholder="Email")
-                                    .error Please, enter correct email
-                                .form-col
-                                    button(type="submit")
-                                        | Verzenden
-                                        i.icon
-                                            include ../resources/assets/img/arrow-right.svg
+                            .form-fields
+                                .form-row
+                                    .form-col
+                                        input(type="text", name="fullname", placeholder="Full Name")
+                                        .error Please, enter correct name
+                                    .form-col
+                                        input(type="text", name="email", placeholder="Email")
+                                        .error Please, enter correct email
+                                    .form-col
+                                        button.stl-btn2(type="submit")
+                                            | Verzenden
+                                            i.icon
+                                                include ../resources/assets/img/arrow-right.svg
 
     +text(false, 'Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer', 'Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.', '')
 

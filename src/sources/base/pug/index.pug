@@ -98,8 +98,51 @@ block content
                 +step('left', 'assets/img/step-icon-bg2.png', 'assets/img/step-icon2.png', '2', 'Gratis proefstuk en prijsopgave', 'Wij komen vrijblijvend naar u toe, op locatie inventariseren wij de werkzaamheden om vervolgens een exacte prijs te berekenen. Daarbij demonstreren wij gratis een proefbehandeling van 2m² op de door u gekozen plek.')
                 +step('right', 'assets/img/step-icon-bg3.png', 'assets/img/step-icon3.png', '3', 'Wij gaan direct aan de slag!', 'Bent u tevreden over het proefstuk? Dan starten wij gelijk met de werkzaamheden en heeft u binnen één dag een vloer als nieuw. Is het proefstuk niet naar wens, dan betaalt u helemaal niets!')
 
+    section.block.block-reviews
+        .bg-decoration
+            img(src="assets/img/decoration2.png", alt="decoration background")
 
+        .reviews-wrapper
+            .main-title
+                .logo
+                    include ../resources/assets/img/reviews-icon.svg
+                | klanten 
+                span vertellen
 
+            .reviews-slider-container
+                mixin slide(title)
+                    .slide
+                        .title=title
+                        .inner-wrapper
+                            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .reviews-slider
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                .slider-controls
+                    .slider-control.slider-prev
+                        include ../resources/assets/img/arrow-up.svg
+                    .slider-control.slider-next
+                        include ../resources/assets/img/arrow-down.svg
+
+    section.block.block-quote
+        .block.block-splash
+            .splash-bg
+                img(src="assets/img/splash-bg3.png", alt="splash background")
+                
+        .quote-wrapper
+            .quote-container
+                .inner-box
+                    .icon
+                        include ../resources/assets/img/diamant.svg
+                    .info
+                        .title Wij komen vrijblijvend langs voor een offerte en advies!
+                        .number BEL NU: 085 800 0007
 
 
 

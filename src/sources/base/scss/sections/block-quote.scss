@@ -1,0 +1,56 @@
+&.block-quote {
+    position: relative;
+    padding: 80px 15px;
+
+    .block-splash {
+        top: -76%;
+    }
+
+    .quote-wrapper {
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+
+        .quote-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 100%;
+            border-radius: 38px;
+            background: #172330 url(../img/quote-bg.png) no-repeat center center;
+            background-size: 100% 100%;
+            box-shadow: 0px 16px 37.6px 2.4px rgba(69, 83, 94, 0.17);
+            padding: 100px 30px;
+            overflow: hidden;
+
+            .inner-box {
+                display: flex;
+                align-items: center;
+                flex: 0 1 60%;
+
+                .icon {
+                    width: 106px;
+                    height: 116px;
+                    margin-right: 30px;
+                }
+
+                .info {
+                    flex: 1 1;
+
+                    .title {
+                        flex: 1 1 100%;
+                        color: #ffd688;
+                        font: 400 23px/22px $bf;
+                        margin-bottom: 24px;
+                    }
+
+                    .number {
+                        color: #ffffff;
+                        font: 600 48px/40px $bf;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

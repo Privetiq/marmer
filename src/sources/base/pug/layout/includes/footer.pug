@@ -1,1 +1,62 @@
+mixin ftmenu(name)
+    li
+        a(href="#")=name
+
 footer.block.block-footer
+    .bg-decoration
+        img(src="assets/img/decoration3.png", alt="decoration background")
+
+    .footer-wrapper
+        .footer-block
+            .title Vloeren onderhoud
+            ul.ft-menu
+                +ftmenu('Gneis onderhoud')
+                +ftmenu('Graniet onderhoud')
+                +ftmenu('Hardsteen onderhoud')
+                +ftmenu('Belgisch Hardsteen onderhoud')
+                +ftmenu('Chinees Hardsteen onderhoud')
+                +ftmenu('Kalksteen onderhoud')
+
+        .footer-block
+            .title
+            ul.ft-menu
+                +ftmenu('Kwartsiet onderhoud')
+                +ftmenu('Leisteen onderhoud')
+                +ftmenu('Marmer onderhoud')
+                +ftmenu('Natuursteen onderhoud')
+                +ftmenu('Travertin onderhoud')
+
+        .footer-block
+            .title Vloer behandelingen
+            ul.ft-menu
+                +ftmenu('Vloer kristalliseren')
+                +ftmenu('Vloer polijsten')
+                +ftmenu('Vloer impregneren')
+                +ftmenu('Vloer schuren')
+                +ftmenu('Vloer afslijpen')
+
+        .footer-block
+            .title Marmer Behandelen
+            .address 
+                | Jan van Duivenvoordestraat 31
+                br
+                | 1067 MT Amsterdam
+            a.phone(href="tel:0858000007")
+                i.icon
+                    include ../../../resources/assets/img/phone-icon.svg
+                | 085 800 0007
+            a.email(href="mailto:info@marmerbehandelen.nl")
+                i.icon
+                    include ../../../resources/assets/img/mail-icon.svg
+                | info@marmerbehandelen.nl
+            .title Vanuit Amsterdam werken wij door heel Nederland!
+            .desc
+                span Locatie & contact
+                br
+                | Beoordeling door klanten: 9.2/10
+                br
+                | 133 beoordelingen
+            .rating-box
+                img(src="assets/img/rating.jpg", alt="rating")
+    .footer-line
+        .copyright Marmerbehandelen.nl

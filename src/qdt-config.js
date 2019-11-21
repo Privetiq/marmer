@@ -27,8 +27,11 @@ module.exports = {
                 "from": "../../node_modules/slick-carousel/slick/slick.min.js",
                 "to": "assets/dist/slick"
             }, {
-                "from": "../../node_modules/slick-carousel/slick/slick.scss",
-                "to": "../../src/sources/base/scss/includes"
+                "from": "../../node_modules/slick-carousel/slick/slick.css",
+                "to": "assets/dist/slick"
+            }, {
+                "from": "../../node_modules/slick-carousel/slick/slick-theme.css",
+                "to": "assets/dist/slick"
             }],
             // browsersync configurations (ex: ip, port and path)
             "server": false,

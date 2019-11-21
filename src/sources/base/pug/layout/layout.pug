@@ -3,8 +3,9 @@ html(lang="en")
     include includes/head
     body
         include includes/dev-pages
-        include includes/header
-        main.block.block-main
-            block content
-        include includes/footer
+        .main-wrapper
+            include includes/header
+            main.block.block-main
+                block content
+            include includes/footer
         include includes/scripts

@@ -68,6 +68,22 @@
                     align-items: center;
                     flex: 0 1;
 
+                    &.white {
+                        li {
+                            a {
+                                color: $wc;
+                            }
+                        }
+                    }
+
+                    &.black {
+                        li {
+                            a {
+                                color: #172330;
+                            }
+                        }
+                    }
+
                     li {
                         padding: 0 24px;
 

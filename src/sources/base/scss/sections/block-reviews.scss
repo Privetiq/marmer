@@ -86,11 +86,27 @@
                             display: block;
                             position: absolute;
                             content: '';
-                            border: 16px solid transparent; 
-                            border-right: 16px solid #FEFEFE;
+                            border: 16px solid transparent;
                             bottom: -16px;
-                            right: 20px;
-                            z-index: -1;
+                            z-index: 2;
+                        }
+                    }
+
+                    &:nth-child(2n) {
+                        .inner-wrapper {
+                            &:after {
+                                border-right: 16px solid #FEFEFE;
+                                right: 20px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2n+1) {
+                        .inner-wrapper {
+                            &:after {
+                                border-left: 16px solid #FEFEFE;
+                                left: 20px;
+                            }
                         }
                     }
 

@@ -26,6 +26,16 @@
             margin-bottom: 40px;
 
             .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 180px;
+                height: 80px;
+                border-radius: 10px;
+                border: 1px solid #e0e4e6;
+                background: $wc;
+                box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
                 margin-left: 5px;
             }
 

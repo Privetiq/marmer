@@ -1,0 +1,84 @@
+&.block-relation {
+    position: relative;
+    padding: 80px 15px;
+
+    .relation-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .relation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 100%;
+            border-radius: 14px;
+            background: #172330 url(../img/relation-bg.png) no-repeat center center;
+            background-size: 100% 100%;
+            box-shadow: 0px 16px 37.6px 2.4px #45535e2b, 0px 16px 34px 6px#45535e38;
+            padding: 50px 30px;
+            overflow: hidden;
+
+            .inner-box {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex: 0 1 80%;
+
+                .title {
+                    flex: 1 1 100%;
+                    color: $wc;
+                    font: 700 36px/48px $bf;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+
+                .desc {
+                    flex: 1 1 100%;
+                    color: $wc;
+                    font: 300 20px/31px $bf;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+
+                .stl-btn2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 0 1 280px;
+                    height: 58px;
+                    border-radius: 4px;
+                    background: #5880a8;
+                    box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
+                    color: $wc;
+                    font: 600 17px $bf;
+                    text-transform: uppercase;
+                    overflow: hidden;
+                    cursor: pointer;
+                    @include trans;
+
+                    .icon {
+                        margin-left: 5px;
+                        @include trans;
+
+                        svg {
+                            path {
+                                fill: $wc;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: #7e9ebe;
+                        @include trans;
+                        
+                        .icon {
+                            margin-left: 10px;
+                            @include trans;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

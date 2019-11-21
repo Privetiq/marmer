@@ -1,0 +1,216 @@
+extends layout/layout
+block content
+    section.block.block-banner.with-splash
+        .bg-decoration
+            img(src="assets/img/decoration1.png", alt="decoration background")
+
+        .block.block-splash
+            .splash-bg
+                img(src="assets/img/splash-bg4.png", alt="splash background")
+            .splash-img
+                img(src="assets/img/splash-img2.png", alt="splash image")
+
+        .banner-wrapper
+            .banner-info
+                .main-title Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer
+                mixin advmark(name)
+                    .marker
+                        i.icon
+                            include ../resources/assets/img/checkbox.svg
+                        span=name
+                .advantages-markers
+                    +advmark('Stofvrije werkwijze')
+                    +advmark('30 jaar ervaring')
+                    +advmark('Landelijk opererend')
+                    +advmark('Gratis proefstuk op locatie')
+                    +advmark('Meubilair kan in huis blijven ')
+            .banner-form
+                .block.block-form
+                    form.form.banner-form(action="#")
+                        .form-title
+                            | Vul uw gegevens in en ontvang binnen 
+                            span 24 uur een reactie.
+                        .form-body
+                            .form-body-box
+                                .form-row
+                                    .form-col
+                                        input(name="full name", type="text", placeholder="Full name")
+                                        .error Enter full name
+                                .form-row
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error Enter correct email
+                                    .form-col
+                                        input(name="phone", type="text", placeholder="Phone")
+                                        .error Enter correct phone
+                                .form-row
+                                    .form-col
+                                        textarea(name="message", placeholder="Message")
+                                        .error Enter some message
+                        .form-button
+                            button.stl-btn1(type="submit")
+                                |   Verzenden
+                                i.icon
+                                    include ../resources/assets/img/arrow-right.svg
+
+    section.block.block-about
+        .about-wrapper
+            .main-title Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer
+            .desc Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.
+            .preview-image
+                img(src="assets/img/preview-image1.jpg", alt="preview image")
+
+    section.block.block-relation
+        .relation-wrapper
+            .relation-container
+                .inner-box
+                    .title Stuur ons een email
+                    .desc Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+                    a.stl-btn2(href="#")
+                        | Verzenden
+                        i.icon
+                            include ../resources/assets/img/arrow-right.svg
+
+    section.block.block-text
+        .text-wrapper
+            .text Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.
+
+    section.block.block-video.with-splash
+        .block.block-splash
+            .splash-img
+                img(src="assets/img/splash-bg2.png", alt="splash background")
+
+        .video-wrapper
+            .main-title 
+                | Bekijk hier onze bedrijfsvideo op TV
+                .logo
+                    img(src="assets/img/video-logo2.png", alt="small logo")
+                .shadow-title Bekijk hier onze bedrijfsvideo 
+                
+            .video-container
+                .video-box
+                    .embed-responsive.embed-responsive-16by9
+                        iframe.embed-responsive-item(src="https://player.vimeo.com/video/343676331?title=0&amp;byline=0&amp;portrait=0", width="1280", height="580", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+    section.block.block-method
+        .method-wrapper
+            .main-title Onze werkwijze
+            .subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+            
+            mixin step(cls, bgsrc, imgsrc, number, title, desc)
+                .step-line(class=cls)
+                    .step-block
+                        .icon-block
+                            .icon-bg
+                                img(src=bgsrc, alt="")
+                            .icon-image
+                                img(src=imgsrc, alt="")
+                        .info-block
+                            .top-line
+                                .number=number
+                                .title=title
+                            .desc=desc
+
+            .steps-wrapper
+                +step('right', 'assets/img/step-icon-bg1.png', 'assets/img/step-icon1.png', '1', 'Neem vrijblijvend contact', 'Bel of mail ons vrijblijvend. Wij bespreken telefonisch de conditie van uw vloer en aan de hand daarvan geven wij u een prijsindicatie en informatie over hoe wij uw vloer opknappen.')
+                +step('left', 'assets/img/step-icon-bg2.png', 'assets/img/step-icon2.png', '2', 'Gratis proefstuk en prijsopgave', 'Wij komen vrijblijvend naar u toe, op locatie inventariseren wij de werkzaamheden om vervolgens een exacte prijs te berekenen. Daarbij demonstreren wij gratis een proefbehandeling van 2m² op de door u gekozen plek.')
+                +step('right', 'assets/img/step-icon-bg3.png', 'assets/img/step-icon3.png', '3', 'Wij gaan direct aan de slag!', 'Bent u tevreden over het proefstuk? Dan starten wij gelijk met de werkzaamheden en heeft u binnen één dag een vloer als nieuw. Is het proefstuk niet naar wens, dan betaalt u helemaal niets!')
+
+    section.block.block-about2
+        .about-wrapper
+            .inner-wrapper
+                .about-block
+                    .inner-block
+                        .main-title Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        .desc
+                            p Marmer behandelen heeft meer dan dertig jaar ervaring in het impregneren, kristalliseren (onze unieke methode), polijsten, reinigen, renoveren, repareren, schuren en slijpen van elk soort natuursteen. De producten van Marmer Behandelen en methodes zijn afkomstig uit Spanje wat ons uniek maakt in Nederland. Uw natuursteen komt opnieuw tot leven en de glans en het contrast komt weer helemaal terug. Marmer behandelen komt vrijblijvend bij u langs om te kijken en te luisteren naar uw wensen. Vanzelfsprekend bieden wij voor elke probleem met uw natuursteenvloer een oplossing en zullen wij u adviseren hoe uw vloer te onderhouden en daarmee voorkom je problemen in de toekomst.
+                            p Marmer behandelen is zeker van zichzelf en daarom bieden wij één gratis proefbehandeling aan zodat niet woorden maar daden voor ons spreken.
+                .about-block
+                    .inner-block
+                        .about-slider-container
+                            .slider-controls
+                                .slider-control.slider-prev
+                                    include ../resources/assets/img/angle-left.svg
+                                .slider-control.slider-next
+                                    include ../resources/assets/img/angle-right.svg
+
+                            .about-slider
+                                .slide: .inner-wrapper: img(src="assets/img/about-image1.png", alt="about slide image")
+                                .slide: .inner-wrapper: img(src="assets/img/about-image1.png", alt="about slide image")
+                                .slide: .inner-wrapper: img(src="assets/img/about-image1.png", alt="about slide image")
+                                .slide: .inner-wrapper: img(src="assets/img/about-image1.png", alt="about slide image")
+                                .slide: .inner-wrapper: img(src="assets/img/about-image1.png", alt="about slide image")
+
+    section.block.block-reviews
+        .bg-decoration
+            img(src="assets/img/decoration2.png", alt="decoration background")
+
+        .reviews-wrapper
+            .main-title
+                .logo
+                    include ../resources/assets/img/reviews-icon.svg
+                | klanten 
+                span vertellen
+
+            .reviews-slider-container
+                mixin slide(title)
+                    .slide
+                        .title=title
+                        .inner-wrapper
+                            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .reviews-slider
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                .slider-controls
+                    .slider-control.slider-prev
+                        include ../resources/assets/img/arrow-up.svg
+                    .slider-control.slider-next
+                        include ../resources/assets/img/arrow-down.svg
+
+    section.block.block-quote
+        .block.block-splash
+            .splash-bg
+                img(src="assets/img/splash-bg3.png", alt="splash background")
+                
+        .quote-wrapper
+            .quote-container
+                .inner-box
+                    .icon
+                        include ../resources/assets/img/diamant.svg
+                    .info
+                        .title Wij komen vrijblijvend langs voor een offerte en advies!
+                        .number BEL NU: 085 800 0007
+
+    section.block.block-text
+        .text-wrapper
+            .title Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer
+            .text Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.
+
+    section.block.block-stones
+        .stones-wrapper
+            .main-title Wij onderhouden de volgende natuurstenen 
+
+            mixin stone(src, name)
+                li
+                    .img
+                        img(src=src, alt="stone preview")
+                    .name=name
+
+            ul.stone-block
+                +stone('assets/img/stone1.jpg', 'Marmer')
+                +stone('assets/img/stone2.jpg', 'Traverti')
+                +stone('assets/img/stone3.jpg', 'Leisteen')
+            ul.stone-block
+                +stone('assets/img/stone4.jpg', 'Graniet')
+                +stone('assets/img/stone5.jpg', 'Kwartsiet')
+                +stone('assets/img/stone6.jpg', 'Belgisch hardsteen')
+            ul.stone-block
+                +stone('assets/img/stone7.jpg', 'Gneis')
+                +stone('assets/img/stone8.jpg', 'Kalksteen')
+                +stone('assets/img/stone9.jpg', 'Chinees  hardsteen')

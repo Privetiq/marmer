@@ -1,0 +1,71 @@
+&.block-stones {
+    position: relative;
+    padding: 80px 15px;
+
+    .stones-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-title {
+            flex: 1 1 100%;
+            color: #192535;
+            font: 700 36px/31px $bf;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .stone-block {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 1 33.33333%;
+
+            li {
+                display: flex;
+                align-items: center;
+                flex: 1 1 100%;
+                padding: 0 70px;
+                margin-bottom: 25px;
+
+                .img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: $wc;
+                    border: 1px solid #D29B73;
+                    overflow: hidden;
+                    margin-right: 20px;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .name {
+                    flex: 1 1;
+                    color: #192535;
+                    font: 600 20px/61px $bf;
+                }
+            }
+        }
+    }
+
+    &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100vw;
+        height: 1px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #cbcbcb;
+        opacity: .4;
+    }
+}

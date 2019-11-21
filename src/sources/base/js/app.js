@@ -8,6 +8,15 @@ $(document).ready(function () {
         centerPadding: '120px',
         vertical: true
     });
+
+    $('.about-slider').slick({
+        prevArrow: $('.about-slider-container .slider-controls .slider-prev'),
+        nextArrow: $('.about-slider-container .slider-controls .slider-next'),
+        fade: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });
 
 $(window).on('load, scroll', function () {

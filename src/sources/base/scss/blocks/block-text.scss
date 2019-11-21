@@ -1,0 +1,21 @@
+&.block-text {
+    position: relative;
+    padding: 80px 15px;
+    
+    .text-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .title {
+            color: #0e1d2d;
+            font: 700 36px/38px $bf;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            color: #0e1d2d;
+            font: 300 18px/38px $bf;
+        }
+    }
+}

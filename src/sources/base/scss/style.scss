@@ -35,6 +35,7 @@ html {
     .block {
         @import 'blocks/block-splash';
         @import 'blocks/block-form';
+        @import 'blocks/block-text';
 
         @import 'sections/block-header';
         @import 'sections/block-footer';
@@ -44,5 +45,7 @@ html {
         @import 'sections/block-method';
         @import 'sections/block-reviews';
         @import 'sections/block-quote';
+        @import 'sections/block-relation';
+        @import 'sections/block-stones';
     }
 }

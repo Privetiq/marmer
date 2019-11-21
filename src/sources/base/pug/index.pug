@@ -71,8 +71,11 @@ block content
                 .logo
                     img(src="assets/img/video-logo.png", alt="small logo")
                 .shadow-title Bekijk hier onze bedrijfsvideo 
-            .video-box
-                iframe#fitvid0(src="https://player.vimeo.com/video/343676331?title=0&amp;byline=0&amp;portrait=0", frameborder="0", allowfullscreen="allowfullscreen")
+                
+            .video-container
+                .video-box
+                    .embed-responsive.embed-responsive-16by9
+                        iframe.embed-responsive-item(src="https://player.vimeo.com/video/343676331?title=0&amp;byline=0&amp;portrait=0", width="1280", height="580" frameborder="0", webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
     section.block.block-method
         .method-wrapper

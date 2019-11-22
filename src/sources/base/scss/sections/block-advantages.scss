@@ -1,0 +1,49 @@
+&.block-advantages {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 180px;
+
+    .advantages-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-title {
+            color: #0e1d2d;
+            font: 700 36px/38px $bf;
+            margin-bottom: 40px;
+        }
+
+        .desc {
+            color: #0e1d2d;
+            font: 300 18px/38px $bf;
+            margin-bottom: 70px;
+        }
+
+        .advantages-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 1 100%;
+
+            .advantage-block {
+                flex: 0 1 50%;
+
+                .image-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 560px;
+                    width: 100%;
+                    border-radius: 7px;
+                    background: #ffffff;
+                    box-shadow: 0px 8px 40px 0px #6a6f812b;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

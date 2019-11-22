@@ -17,24 +17,7 @@
         display: block;
         position: relative;
         width: fit-content;
-        filter: grayscale(100%);
         transition: all .3s ease;
         z-index: 2;
-    }
-
-    &:hover {
-        .splash-img {
-            filter: grayscale(0%);
-            transition: all .3s ease;
-        }
-    }
-}
-
-&.with-splash {
-    &:hover {
-        .splash-img {
-            filter: grayscale(0%);
-            transition: all .3s ease;
-        }
     }
 }

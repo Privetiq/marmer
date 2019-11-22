@@ -65,3 +65,31 @@
         padding-top: percentage(1 / 1);
     }
 }
+
+ul {
+    &.check-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        padding: 10px 0;
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            flex: 1 1 100%;
+            color: #2a2a2a;
+            font: 400 18px/20px $bf;
+            margin-bottom: 20px;
+
+            .icon {
+                margin-right: 13px;
+
+                svg {
+                    path {
+                        fill: #c52545;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,6 +10,13 @@
 @import 'includes/dev-pages';
 
 html {
+
+    body {
+        &.opmenu {
+            overflow: hidden;
+        }
+    }
+
     .main-wrapper {
         position: relative;
         overflow: hidden;

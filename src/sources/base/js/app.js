@@ -17,6 +17,14 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+
+    $('.burger').on('click', function(){
+        $(this).toggleClass('active');
+        $('body').toggleClass('opmenu');
+        $('header').toggleClass('opmenu');
+
+        return false;
+    });
 });
 
 $(window).on('load, scroll', function () {

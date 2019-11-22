@@ -421,6 +421,12 @@
         .header-wrapper {
             padding: 15px 0;
 
+            .header-logo {
+                img {
+                    max-width: 140px;
+                }
+            }
+
             .header-container {
                 flex: 0 0;
 
@@ -434,8 +440,8 @@
                     justify-content: flex-start;
                     position: fixed;
                     width: 100vw;
-                    height: calc(100vh - 96px);
-                    top: 96px;
+                    height: calc(100vh - 74px);
+                    top: 74px;
                     left: 0;
                     right: 0;
                     bottom: 0;
@@ -480,5 +486,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    &.block-header {
+        padding: 0 15px;
     }
 }

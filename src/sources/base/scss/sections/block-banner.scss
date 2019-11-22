@@ -1,6 +1,6 @@
 &.block-banner {
     position: relative;
-    padding: 200px 15px 80px;
+    padding: 200px 15px 0;
 
     .bg-decoration {
         display: block;
@@ -23,6 +23,7 @@
 
         .banner-info {
             flex: 0 1 60%;
+            padding-right: 30px;
 
             .main-title {
                 flex: 1 1;
@@ -90,13 +91,117 @@
         }
 
         .banner-form {
+            display: flex;
+            justify-content: flex-end;
             position: relative;
             flex: 0 1 40%;
+        }
+    }
+}
 
-            .block-form {
-                position: absolute;
-                top: 0;
-                left: 10%;
+@media only screen and (max-width: 1200px) {
+    &.block-banner {
+        .banner-wrapper {
+            .banner-info {
+                .main-title {
+                    font-size: 36px;
+                    margin-bottom: 30px;
+                }
+
+                .advantages-markers {
+                    .marker {
+                        padding: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+
+                        span {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    &.block-banner {
+        .banner-wrapper {
+            flex-wrap: wrap;
+
+            .banner-info {
+                flex: 1 1 100%;
+                padding-right: 0;
+                margin-bottom: 30px;
+
+                .main-title {
+                    text-align: center;
+                }
+
+                .advantages-markers {
+                    justify-content: center;
+                }
+            }
+
+            .banner-form {
+                display: flex;
+                justify-content: center;
+                flex: 1 1 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    &.block-banner {
+        padding: 100px 15px 0;
+
+        .block-splash {
+            width: calc(100vw + 80px);
+
+            .splash-bg {
+                width: calc(100vw + 20px);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .splash-img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .banner-wrapper {
+            .banner-info {
+                .main-title {
+                    font-size: 28px;
+                }
+
+                .advantages-markers {
+                    flex-direction: column;
+
+                    .marker {
+                        margin-right: 0;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    &.block-banner {
+        .banner-wrapper {
+            .banner-info {
+                .main-title {
+                    font-size: 20px;
+                }
             }
         }
     }

@@ -13,6 +13,7 @@
 
     .footer-wrapper {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         position: relative;
         max-width: 1500px;
@@ -22,32 +23,7 @@
 
         .footer-block {
             flex: 0 1 25%;
-
-            a {
-                display: flex;
-                align-items: center;
-                flex: 1 1 100%;
-                margin-bottom: 10px;
-                color: #172330;
-                font: 400 15px/28px $bf;
-                margin-bottom: 10px;
-
-                .icon {
-                    display: flex;
-                    align-items: center;
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 10px;
-
-                    svg {
-                        width: 100%;
-
-                        path {
-                            fill: #9B6233;
-                        }
-                    }
-                }
-            }
+            padding-right: 30px;
 
             .title {
                 flex: 1 1 100%;
@@ -69,6 +45,38 @@
                         flex: 1 1 100%;
                         color: #172330;
                         font: 500 15px/36px $bf;
+                    }
+                }
+            }
+
+            .phone-container, 
+            .email-container {
+                display: flex;
+                flex: 1 1 100%;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    width: fit-content;
+                    margin-bottom: 10px;
+                    color: #172330;
+                    font: 400 15px/28px $bf;
+                    margin-bottom: 10px;
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+
+                        svg {
+                            width: 100%;
+
+                            path {
+                                fill: #9B6233;
+                            }
+                        }
                     }
                 }
             }
@@ -115,6 +123,10 @@
                     @include trans;
                 }
             }
+
+            &:last-child {
+                padding-right: 0;
+            }
         }
 
         &:before {
@@ -158,6 +170,40 @@
             transform: translateX(-50%);
             background: #cbcbcb;
             opacity: .4;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    &.block-footer {
+        .footer-wrapper {
+            .footer-block {
+                flex: 1 1 100%;
+                text-align: center;
+                padding: 0;
+                margin-bottom: 20px;
+
+                .title {
+                    min-height: auto;
+                }
+
+                .ft-menu {
+                    li {
+                        a {
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .phone-container, 
+                .email-container {
+                    justify-content: center;
+                }
+
+                .rating-box {
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }

@@ -10,7 +10,7 @@
 
     &.opmenu {
         position: fixed;
-        background: #ffffff;
+        background: #ffffff !important;
         @include trans;
 
         .header-wrapper {
@@ -131,65 +131,77 @@
             .burger {
                 display: none;
                 position: relative;
-                width: 30px;
-                height: 24px;
-                overflow: hidden;
+                width: 50px;
+                height: 44px;
+                padding: 10px;
+                border-radius: 4px;
+                background: #ffffff;
                 z-index: 999;
                 cursor: pointer;
 
                 &.active {
+                    .burger-box {
+                        span {
+                            transform: translate(-100%, -50%);
+                            @include trans;
+                        }
+
+                        &:before {
+                            top: 50%;
+                            transform: translateY(-50%) rotate(45deg);
+                            @include trans;
+                        }
+
+                        &:after {
+                            bottom: 50%;
+                            transform: translateY(-50%) rotate(-45deg);
+                            @include trans;
+                        }
+                    }
+                }
+
+                .burger-box {
+                    display: block;
+                    position: relative;
+                    width: 30px;
+                    height: 24px;
+                    overflow: hidden;
+
                     span {
-                        transform: translate(-100%, -50%);
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background: #9B6233;
                         @include trans;
                     }
 
                     &:before {
-                        top: 50%;
-                        transform: translateY(-50%) rotate(45deg);
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        width: 30px;
+                        height: 2px;
+                        top: 0;
+                        left: 0;
+                        background: #9B6233;
                         @include trans;
                     }
 
                     &:after {
-                        bottom: 50%;
-                        transform: translateY(-50%) rotate(-45deg);
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        width: 30px;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background: #9B6233;
                         @include trans;
                     }
-                }
-
-                span {
-                    display: block;
-                    position: absolute;
-                    height: 2px;
-                    top: 50%;
-                    left: 0;
-                    right: 0;
-                    transform: translateY(-50%);
-                    background: #9B6233;
-                    @include trans;
-                }
-
-                &:before {
-                    display: block;
-                    position: absolute;
-                    content: '';
-                    width: 30px;
-                    height: 2px;
-                    top: 0;
-                    left: 0;
-                    background: #9B6233;
-                    @include trans;
-                }
-
-                &:after {
-                    display: block;
-                    position: absolute;
-                    content: '';
-                    width: 30px;
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background: #9B6233;
-                    @include trans;
                 }
             }
 
@@ -470,7 +482,3 @@
         }
     }
 }
-
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 1200px) {}

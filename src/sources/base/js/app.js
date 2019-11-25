@@ -18,6 +18,14 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
+    $('.text-slider').slick({
+        prevArrow: $('.text-slider-container .slider-controls .slider-prev'),
+        nextArrow: $('.text-slider-container .slider-controls .slider-next'),
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
     $('.burger').on('click', function(){
         $(this).toggleClass('active');
         $('body').toggleClass('opmenu');

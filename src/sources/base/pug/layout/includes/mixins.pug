@@ -1,12 +1,22 @@
 //-text block
-mixin text(pimg=false, title, desc, src)
+mixin text(pimg=false, title, desc, ...images)
     section.block.block-text
         .text-wrapper
             .title=title
             .desc=desc
             if (pimg)
-                .preview-image
-                    img(src=src, alt="mixin image")
+                .text-slider-container
+                    .slider-controls
+                        .slider-control.slider-prev
+                            include ../../../resources/assets/img/angle-left.svg
+                        .slider-control.slider-next
+                            include ../../../resources/assets/img/angle-right.svg
+                    .slider-wrapper
+                        .text-slider
+                            each img in images
+                                .slide
+                                    .preview-image
+                                        img(src=img, alt="mixin image")
             else
                 //-nothing
 

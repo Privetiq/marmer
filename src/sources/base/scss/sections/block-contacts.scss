@@ -137,5 +137,93 @@
                 }
             }
         }
+
+        @media only screen and (max-width: 992px) {
+            .contacts-block {
+                flex: 1 1 100%;
+                margin-bottom: 30px;
+
+                .inner-wrapper {
+                    .contact-block {
+                        margin-bottom: 30px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .main-title {
+                        font-size: 36px;
+                        line-height: 46px;
+                        margin-bottom: 20px;
+                    }
+
+                    .contact-block {
+                        .title {
+                            font-size: 28px;
+                            line-height: 32px;
+                        }
+
+                        .address,
+                        .locate {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .contacts-block {
+                .inner-wrapper {
+                    .main-title {
+                        font-size: 28px;
+                        line-height: 36px;
+                        margin-bottom: 15px;
+                    }
+
+                    .contact-block {
+                        .title {
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    .map-wrapper {
+                        .map-box {
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .contacts-block {
+                .inner-wrapper {
+                    .main-title {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+
+                    .contact-block {
+                        .title {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        .address,
+                        .locate {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

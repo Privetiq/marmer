@@ -1,6 +1,7 @@
 &.block-quote {
     position: relative;
-    padding: 80px 15px;
+    padding: 0 15px;
+    margin-bottom: 80px;
 
     .block-splash {
         top: -20%;
@@ -30,9 +31,16 @@
                 flex: 0 1 60%;
 
                 .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 106px;
                     height: 116px;
                     margin-right: 30px;
+
+                    svg, img {
+                        width: 100%;
+                    }
                 }
 
                 .info {
@@ -53,11 +61,92 @@
                 }
             }
         }
+
+        @media only screen and (max-width: 1200px) {
+            .quote-container {
+                .inner-box {
+                    flex: 0 1 80%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .quote-container {
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .info {
+                        .title {
+                            font-size: 20px;
+                            line-height: 20px;
+                        }
+
+                        .number {
+                            font-size: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .quote-container {
+                padding: 60px 20px;
+                border-radius: 24px;
+
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .icon {
+                        width: 80px;
+                        height: 80px;
+                        margin-right: 20px;
+
+                        svg {
+                            width: 100%;
+                        }
+                    }
+
+                    .info {
+                        .title {
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+
+                        .number {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .quote-container {
+                padding: 40px 15px;
+                border-radius: 14px;
+
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .icon {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    .info {
+                        .title {
+                            font-size: 16px;
+                            line-height: 16px;
+                        }
+
+                        .number {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}

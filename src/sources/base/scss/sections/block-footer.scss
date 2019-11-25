@@ -25,6 +25,14 @@
             flex: 0 1 25%;
             padding-right: 30px;
 
+            .inner-block {
+                margin-bottom: 40px;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
             .title {
                 flex: 1 1 100%;
                 min-height: 33px;

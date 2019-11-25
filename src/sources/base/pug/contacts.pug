@@ -43,37 +43,37 @@ block content
 
     section.block.block-contacts
         .contacts-wrapper
-            .contacts-block
-                .inner-wrapper
-                    .main-title Contacten
-                    .contact-block
-                        .contact-box
-                            .address 
-                                | Jan van Duivenvoordestraat 31 
-                                br
-                                | 1067 MT Amsterdam
-                        .contact-box
-                            .title
-                            .locate 
-                                | Beoordeling door klanten: 9.2/10
-                                br
-                                | 133 beoordelingen
-                            +phone('tel:0858000007', '085 800 0007')
-                            +email('mailto:info@marmerbehandelen.nl', 'info@marmerbehandelen.nl')
-                    .contact-block
-                        .contact-box
-                            .title
-                            ul.soc
-                                li
-                                    a(href="#")
-                                        include ../resources/assets/img/soc-icon1.svg
-                                li
-                                    a(href="#")
-                                        include ../resources/assets/img/soc-icon2.svg
+            .contacts-inner-wrapper
+                .contacts-block
+                    .inner-wrapper
+                        .main-title Contacten
+                        .contact-block
+                            .contact-box
+                                .address 
+                                    | Jan van Duivenvoordestraat 31 
+                                    br
+                                    | 1067 MT Amsterdam
+                            .contact-box
+                                .title Klant vertelen
+                                .locate 
+                                    | Beoordeling door klanten: 9.2/10
+                                    br
+                                    | 133 beoordelingen
+                                +phone('tel:0858000007', '085 800 0007')
+                                +email('mailto:info@marmerbehandelen.nl', 'info@marmerbehandelen.nl')
+                        .contact-block
+                            .contact-box
+                                .title Follow
+                                ul.soc
+                                    li
+                                        a.fb(href="#")
+                                            include ../resources/assets/img/soc-icon1.svg
+                                    li
+                                        a.in(href="#")
+                                            include ../resources/assets/img/soc-icon2.svg
 
-            .contacts-block
-                .inner-wrapper
-                    .main-title Actief in het gat Nederland
-                    .map-wrapper
-                        #map.map-box(style="display: block; width: 100%; height: 600px;")
-                            
+                .contacts-block
+                    .inner-wrapper
+                        .main-title Actief in het gat Nederland
+                        .map-wrapper
+                            #map.map-box

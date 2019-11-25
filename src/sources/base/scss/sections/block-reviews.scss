@@ -1,6 +1,7 @@
 &.block-reviews {
     position: relative;
-    padding: 80px 15px;
+    padding: 0 15px;
+    margin-bottom: 80px;
 
     .bg-decoration {
         display: block;
@@ -161,10 +162,110 @@
             }
         }
     }
-}
 
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
+    @media only screen and (max-width: 1200px) {
+        .reviews-wrapper {
+            .main-title {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        .reviews-wrapper {
+            .main-title {
+                font-size: 28px;
+                line-height: 36px;
+                margin-bottom: 30px;
+
+                .logo {
+                    width: 43px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 60px;
+
+        .reviews-wrapper {
+            .main-title {
+                font-size: 24px;
+                line-height: 30px;
+                margin-bottom: 20px;
+
+                .logo {
+                    width: 33px;
+                    height: 32px;
+                }
+            }
+
+            .reviews-slider-container {
+                align-items: center;
+                flex-direction: column;
+
+                .reviews-slider {
+                    flex: 1 1 100%;
+
+                    .slide {
+                        padding: 20px !important;
+
+                        &.slick-current {
+                            max-width: 290px;
+                            padding: 20px !important;
+                        }
+
+                        .title {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        .inner-wrapper {
+                            .desc {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .slider-controls {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 40px;
+
+        .reviews-wrapper {
+            .main-title {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 15px;
+
+                .logo {
+                    width: 23px;
+                    height: 22px;
+                }
+            }
+
+            .reviews-slider-container {
+                .reviews-slider {
+                    .slide {
+                        padding: 0px;
+
+                        .inner-wrapper {
+                            padding: 15px;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

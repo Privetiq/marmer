@@ -6,7 +6,25 @@ $(document).ready(function () {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '120px',
-        vertical: true
+        vertical: true,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    centerPadding: '60px',
+                    vertical: false,
+                    arrows: false
+                }
+            }, {
+                breakpoint: 481,
+                settings: {
+                    centerMode: false,
+                    centerPadding: '0px',
+                    vertical: false,
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $('.about-slider').slick({

@@ -215,13 +215,26 @@
         @include trans;
 
         .icon {
+            display: flex;
+            align-items: center;
+            max-width: 35px;
             margin-left: 5px;
             @include trans;
 
             svg {
+                width: 100%;
+
                 path {
                     fill: $wc;
                 }
+            }
+
+            @media only screen and (max-width: 768px) {
+                max-width: 25px;
+            }
+
+            @media only screen and (max-width: 480px) {
+                max-width: 18px;
             }
         }
 
@@ -252,13 +265,26 @@
         @include trans;
 
         .icon {
+            display: flex;
+            align-items: center;
+            max-width: 35px;
             margin-left: 5px;
             @include trans;
 
             svg {
+                width: 100%;
+
                 path {
                     fill: $wc;
                 }
+            }
+
+            @media only screen and (max-width: 768px) {
+                max-width: 25px;
+            }
+
+            @media only screen and (max-width: 480px) {
+                max-width: 18px;
             }
         }
 

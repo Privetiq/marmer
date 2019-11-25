@@ -58,13 +58,26 @@
                     @include trans;
 
                     .icon {
+                        display: flex;
+                        align-items: center;
+                        max-width: 35px;
                         margin-left: 5px;
                         @include trans;
 
                         svg {
+                            width: 100%;
+
                             path {
                                 fill: $wc;
                             }
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            max-width: 25px;
+                        }
+
+                        @media only screen and (max-width: 480px) {
+                            max-width: 18px;
                         }
                     }
 
@@ -79,12 +92,57 @@
                     }
                 }
             }
+
+            @media only screen and (max-width: 992px) {
+                .inner-box {
+                    .title {
+                        font-size: 28px;
+                        line-height: 38px;
+                    }
+
+                    .desc {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                padding: 50px 30px;
+
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .title {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+
+                    .desc {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                .inner-box {
+                    .title {
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+
+                    .desc {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    .stl-btn2 {
+                        max-width: 200px;
+                        height: 40px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
     }
 }
-
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}

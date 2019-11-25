@@ -77,3 +77,30 @@ block content
                         .main-title Actief in het gat Nederland
                         .map-wrapper
                             #map.map-box
+
+    section.block.block-demonstration
+        .demonstration-wrapper
+            .block.block-form
+                form.form.demo-form(action="#")
+                    .form-body
+                        .form-body-box
+                            .form-title
+                                | Boek een
+                                span grati
+                                | demonstratie
+                            
+                            .form-subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+
+                            .form-fields
+                                .form-row
+                                    .form-col
+                                        input(name="fullname", type="text", placeholder="Full Name")
+                                        .error Please, enter correct name
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error Please, enter correct email
+                                    .form-col
+                                        button.stl-btn2(type="submit")
+                                            | Verzenden
+                                            i.icon
+                                                include ../resources/assets/img/arrow-right.svg

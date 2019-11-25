@@ -50,7 +50,55 @@
                 .name {
                     flex: 1 1;
                     color: #192535;
-                    font: 600 20px/61px $bf;
+                    font: 600 20px/20px $bf;
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .main-title {
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+
+            .stone-block {
+                .name {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .main-title {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .stone-block {
+                flex: 1 1 100%;
+                
+                li {
+                    padding: 0 15px;
+
+                    .name {
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .main-title {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .stone-block {
+                .name {
+                    font-size: 14px;
                 }
             }
         }
@@ -69,9 +117,3 @@
         opacity: .4;
     }
 }
-
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}

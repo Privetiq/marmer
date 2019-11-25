@@ -96,13 +96,23 @@
                             right: 0;
                             bottom: 0;
                             z-index: -1;
+
+                            img {
+                                width: 100%;
+                            }
                         }
 
-                        .icon-img {
+                        .icon-image {
                             display: flex;
-                            flex: 0 1;
+                            justify-content: center;
+                            align-items: center;
+                            max-width: 75px;
                             position: relative;
                             z-index: 1;
+
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -184,11 +194,171 @@
                 }
             }
         }
+
+        @media only screen and (max-width: 1300px) {
+            .steps-wrapper {
+                .step-line {
+                    &:nth-child(1) {
+                        &:after {
+                            top: 55%;
+                            left: 60px;
+                            right: 60px;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .main-title {
+                font-size: 28px;
+            }
+
+            .steps-wrapper {
+                padding-top: 60px;
+
+                .step-line {
+                    .step-block {
+                        .icon-block {
+                            width: 180px;
+                            height: 180px;
+
+                        }
+
+                        .info-block {
+                            .top-line {
+                                .number {
+                                    width: 34px;
+                                    height: 34px;
+                                    font-size: 18px;
+                                }
+
+                                .title {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        &:after {
+                            top: 55%;
+                            left: 60px;
+                            right: 60px;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .main-title {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .steps-wrapper {
+                padding-top: 40px;
+
+                .step-line {
+                    .step-block {
+                        text-align: left !important;
+                        
+                        .icon-block {
+                            width: 120px;
+                            height: 120px;
+                            order: 1 !important;
+                            margin-left: 0 !important;
+                            margin-right: 15px !important;
+
+                            .icon-image {
+                                max-width: 40px;
+                            }
+                        }
+
+                        .info-block {
+                            .top-line {
+                                justify-content: flex-start !important;
+                                margin-bottom: 20px;
+
+                                .title {
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                }
+                            }
+
+                            .desc {
+                                flex: 1 1 100%;
+                                font-size: 16px;
+                                line-height: 20px;
+                                padding-left: 12px !important;
+                            }
+                        }
+                    }
+
+                    &:after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .main-title {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .steps-wrapper {
+                padding-top: 30px;
+
+                .step-line {
+                    .step-block {
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        .icon-block {
+                            margin-bottom: 10px;
+                        }
+
+                        .info-block {
+                            flex: 1 1 100%;
+
+                            .top-line {
+                                justify-content: center !important;
+                                margin-bottom: 15px;
+
+                                .number {
+                                    width: 28px;
+                                    height: 28px;
+                                    font-size: 16px;
+                                }
+
+                                .title {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .desc {
+                                font-size: 14px;
+                                line-height: 18px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}

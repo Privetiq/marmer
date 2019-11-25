@@ -1,6 +1,7 @@
 &.block-about {
     position: relative;
-    padding: 80px 15px;
+    padding: 0 15px;
+    margin-bottom: 80px;
 
     .about-wrapper {
         max-width: 1280px;
@@ -12,11 +13,23 @@
             max-width: 100%;
             width: 100%;
             margin: 0 -15px;
+
+            @media only screen and (max-width: 992px) {
+                flex-wrap: wrap;
+                margin: 0;
+            }
         }
 
         .about-block {
             flex: 0 1 50%;
             padding: 0 15px;
+
+            &.with-slider {
+                .inner-block {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
 
             .main-title {
                 position: relative;
@@ -37,12 +50,17 @@
                     background: url(../img/title-line.png) no-repeat center center;
                 }
             }
+            
+            .desc {
+                flex: 1 1 100%;
+                color: #192535;
+                font: 300 17px/31px $bf;
+            }
 
             .about-slider-container {
                 position: relative;
                 max-width: 540px;
-                width: 100%;
-                float: right;
+                z-index: 9;
 
                 .slider-controls {
                     display: block;
@@ -99,18 +117,18 @@
                 }
 
                 .about-slider {
-                    position: relative;
+                    max-width: 540px;
                     width: 100%;
-                    background: transparent;
-                    box-shadow: 0px 16px 37.6px 2.4px #45535e2b,0px 16px 34px 6px #45535e38;
-                    z-index: 9;
+
+                    .slick-list {
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0px 16px 37.6px 2.4px #45535e2b,0px 16px 34px 6px #45535e38;
+                    }
 
                     .slide {
-                        background: transparent;
-
-                        .inner-wrapper {
-                            border-radius: 8px;
-                            overflow: hidden;
+                        img {
+                            width: 100%;
                         }
                     }
 
@@ -151,12 +169,88 @@
                     }
                 }
             }
+
+            @media only screen and (max-width: 1200px) {
+                .main-title {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+
+                .desc {
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+                padding: 0;
+                margin-bottom: 30px;
+
+                .main-title {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                &.with-slider {
+                    .inner-block {
+                        display: flex;
+                        justify-content: center;
+                        flex: 1 1;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                .main-title {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .desc {
+                    font-size: 14px;
+                    line-height: 18px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+
+                &.with-slider {
+                    .inner-block {
+                        display: flex;
+                        justify-content: center;
+                        flex: 1 1;
+
+                        .about-slider-container {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                .main-title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
         }
     }
-}
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
 
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 40px;
+    }
+}

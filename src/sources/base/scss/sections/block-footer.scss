@@ -84,38 +84,6 @@
                 }
             }
 
-            .phone-container, 
-            .email-container {
-                display: flex;
-                flex: 1 1 100%;
-
-                a {
-                    display: flex;
-                    align-items: center;
-                    width: fit-content;
-                    margin-bottom: 10px;
-                    color: #172330;
-                    font: 400 15px/28px $bf;
-                    margin-bottom: 10px;
-
-                    .icon {
-                        display: flex;
-                        align-items: center;
-                        width: 20px;
-                        height: 20px;
-                        margin-right: 10px;
-
-                        svg {
-                            width: 100%;
-
-                            path {
-                                fill: #9B6233;
-                            }
-                        }
-                    }
-                }
-            }
-
             .address {
                 flex: 1 1 100%;
                 color: #172330;

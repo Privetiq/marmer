@@ -51,3 +51,17 @@ mixin stone(src, name)
         .img
             img(src=src, alt="stone preview")
         .name=name
+
+mixin phone(href, phone)
+    .phone-container
+        a.phone(href=href)
+            i.icon
+                include ../../../resources/assets/img/phone-icon.svg
+            span= phone
+
+mixin email(href, email)
+    .email-container
+        a.email(href=href)
+            i.icon
+                include ../../../resources/assets/img/mail-icon.svg
+            span= email

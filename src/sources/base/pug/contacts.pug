@@ -1,0 +1,79 @@
+extends layout/layout
+block content
+    section.block.block-banner.with-splash
+        .bg-decoration
+            img(src="assets/img/decoration1.png", alt="decoration background")
+
+        .block.block-splash
+            .splash-bg
+                img(src="assets/img/splash-bg5.png", alt="splash background")
+            .splash-img
+                img(src="assets/img/splash-img3.png", alt="splash image")
+
+        .banner-wrapper
+            .banner-info
+            .banner-form
+                .block.block-form
+                    form.form.banner-form(action="#")
+                        .form-title
+                            | Contact us for
+                            span any questions.
+                        .form-body
+                            .form-body-box
+                                .form-row
+                                    .form-col
+                                        input(name="full name", type="text", placeholder="Full name")
+                                        .error Enter full name
+                                .form-row
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error Enter correct email
+                                    .form-col
+                                        input(name="phone", type="text", placeholder="Phone")
+                                        .error Enter correct phone
+                                .form-row
+                                    .form-col
+                                        textarea(name="message", placeholder="Message")
+                                        .error Enter some message
+                        .form-button
+                            button.stl-btn1(type="submit")
+                                |   Verzenden
+                                i.icon
+                                    include ../resources/assets/img/arrow-right.svg
+
+    section.block.block-contacts
+        .contacts-wrapper
+            .contacts-block
+                .inner-wrapper
+                    .main-title Contacten
+                    .contact-block
+                        .contact-box
+                            .address 
+                                | Jan van Duivenvoordestraat 31 
+                                br
+                                | 1067 MT Amsterdam
+                        .contact-box
+                            .title
+                            .locate 
+                                | Beoordeling door klanten: 9.2/10
+                                br
+                                | 133 beoordelingen
+                            +phone('tel:0858000007', '085 800 0007')
+                            +email('mailto:info@marmerbehandelen.nl', 'info@marmerbehandelen.nl')
+                    .contact-block
+                        .contact-box
+                            .title
+                            ul.soc
+                                li
+                                    a(href="#")
+                                        include ../resources/assets/img/soc-icon1.svg
+                                li
+                                    a(href="#")
+                                        include ../resources/assets/img/soc-icon2.svg
+
+            .contacts-block
+                .inner-wrapper
+                    .main-title Actief in het gat Nederland
+                    .map-wrapper
+                        #map.map-box(style="display: block; width: 100%; height: 600px;")
+                            

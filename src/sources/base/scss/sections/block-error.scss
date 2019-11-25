@@ -40,6 +40,10 @@
                 right: 0;
                 bottom: 0;
                 z-index: -1;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .icon-img {
@@ -98,6 +102,8 @@
                 text-transform: uppercase;
 
                 .icon {
+                    display: flex;
+                    align-items: center;
                     margin-left: 5px;
                     @include trans;
 
@@ -119,11 +125,89 @@
                 }
             }
         }
+
+        @media only screen and (max-width: 992px) {
+            .main-icon {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 60px;
+
+                .icon-img {
+                    max-width: 100px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .main-title {
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+            .desc {
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .main-icon {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 30px;
+
+                .icon-img {
+                    max-width: 50px;
+                }
+            }
+
+            .main-icon {
+
+            }
+            .main-title {
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+
+            .desc {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 15px;
+            }
+
+            .btn-wrapper {
+                .stl-btn1 {
+                    max-width: 200px;
+                    height: 40px;
+                    font-size: 15px;
+                    font-weight: 400;
+
+                    .icon {
+                        max-width: 20px;
+
+                        svg {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .main-title {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 100px 15px 60px;
     }
 }
-
-@media only screen and (max-width: 1200px) {}
-@media only screen and (max-width: 992px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}

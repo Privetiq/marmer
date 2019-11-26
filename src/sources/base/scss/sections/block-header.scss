@@ -43,6 +43,15 @@
                         }
                     }
                 }
+
+                .header-call {
+                    a {
+                        .number, .name {
+                            color: #172330;
+                            text-shadow: none;
+                        }
+                    }
+                }
             }
         }
     }
@@ -81,6 +90,15 @@
                                 color: #172330;
                                 @include trans;
                             }
+                        }
+                    }
+                }
+
+                .header-call {
+                    a {
+                        .number, .name {
+                            color: #172330;
+                            text-shadow: none;
                         }
                     }
                 }

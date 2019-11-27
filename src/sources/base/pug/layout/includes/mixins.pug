@@ -69,3 +69,9 @@ mixin email(href, email)
 mixin ftmenu(name)
     li
         a(href="#")=name
+
+mixin advmark(name)
+    .marker
+        i.icon
+            include ../../../resources/assets/img/checkbox.svg
+        span=name

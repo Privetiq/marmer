@@ -145,6 +145,14 @@
             background: #cbcbcb;
             opacity: .4;
         }
+
+        @media only screen and (max-width: 768px) {
+            padding: 60px 0;
+        }
+
+        @media only screen and (max-width: 480px) {
+            padding: 40px 0;
+        }
     }
 
     .footer-line {

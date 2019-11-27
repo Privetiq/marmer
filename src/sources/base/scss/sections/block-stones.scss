@@ -117,4 +117,12 @@
         background: #cbcbcb;
         opacity: .4;
     }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 40px;
+    }
 }

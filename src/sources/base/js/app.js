@@ -36,6 +36,13 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
+    $('.project-slider').slick({
+        fade: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
     $('.text-slider').slick({
         prevArrow: $('.text-slider-container .slider-controls .slider-prev'),
         nextArrow: $('.text-slider-container .slider-controls .slider-next'),

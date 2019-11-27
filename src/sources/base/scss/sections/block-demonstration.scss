@@ -3,6 +3,12 @@
     padding: 0 15px;
     margin-bottom: 80px;
 
+    .block-splash {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
     .demonstration-wrapper {
         max-width: 1280px;
         width: 100%;

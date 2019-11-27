@@ -21,6 +21,30 @@ html {
         position: relative;
         overflow: hidden;
 
+        &.with-margin {
+            section {
+                position: relative;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    width: 1920px;
+                    height: 1421px;
+                    top: -230px;
+                    left: 50%;
+                    background: url(../img/decoration4.png) no-repeat center top;
+                    background-size: cover;
+                    transform: translateX(-50%);
+                    z-index: -3;
+                }
+
+                &:first-child {
+                    margin-top: 230px;
+                }
+            }
+        }
+
         .line {
             display: block;
             position: fixed;
@@ -57,7 +81,7 @@ html {
         @import 'sections/block-relation';
         @import 'sections/block-stones';
         @import 'sections/block-demonstration';
-        @import 'sections/block-error';
+        @import 'sections/block-single';
         @import 'sections/block-advantages';
         @import 'sections/block-contacts';
     }

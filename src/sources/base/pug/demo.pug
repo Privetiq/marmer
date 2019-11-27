@@ -1,0 +1,76 @@
+extends layout/layout2
+block content
+    section.block.block-demonstration
+        .demonstration-wrapper
+            .block.block-form
+                form.form.demo-form(action="#")
+                    .form-body
+                        .form-body-box
+                            .form-title
+                                | Boek een
+                                span grati
+                                | demonstratie
+                            
+                            .form-subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+
+                            .form-fields
+                                .form-row
+                                    .form-col
+                                        input(name="fullname", type="text", placeholder="Full Name")
+                                        .error Please, enter correct name
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error Please, enter correct email
+                                    .form-col
+                                        button.stl-btn2(type="submit")
+                                            | Verzenden
+                                            i.icon
+                                                include ../resources/assets/img/arrow-right.svg
+
+    +text(true, 'Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer', 'Marmer behandelen heeft meer dan dertig jaar ervaring in het impregneren, kristalliseren (onze unieke methode), polijsten, reinigen, renoveren, repareren, schuren en slijpen van elk soort natuursteen. De producten van Marmer Behandelen en methodes zijn afkomstig uit Spanje wat ons uniek maakt in Nederland. Uw natuursteen komt opnieuw tot leven en de glans en het contrast komt weer helemaal terug. Marmer behandelen komt vrijblijvend bij u langs om te kijken en te luisteren naar uw wensen. Vanzelfsprekend bieden wij voor elke probleem met uw natuursteenvloer een oplossing en zullen wij u adviseren hoe uw vloer te onderhouden en daarmee voorkom je problemen in de toekomst. Marmer behandelen is zeker van zichzelf en daarom bieden wij één gratis proefbehandeling aan zodat niet woorden maar daden voor ons spreken.', 'assets/img/preview-image1.jpg', 'assets/img/preview-image1.jpg', 'assets/img/preview-image1.jpg')
+
+    section.block.block-advantages
+        .advantages-wrapper
+            .main-title De voordelen
+            .desc Wij herstellen de glans van uw vloer, zodat deze een geheel nieuwe uitstraling krijgt. Daarom bent u bij Natuursteen Behandelen aan het juiste adres voor al uw natuursteen behandelingen.
+            .advantages-container
+                .advantage-block
+                    .image-wrapper
+                        img(src="assets/img/advantage-img.jpg", alt="")
+                .advantage-block
+                    ul.check-list
+                        li 
+                            i.icon
+                                include ../resources/assets/img/check-list-icon.svg
+                            | Gratis demonstratie op locatie
+                        li 
+                            i.icon
+                                include ../resources/assets/img/check-list-icon.svg
+                            | Landelijk werkend
+                        li 
+                            i.icon
+                                include ../resources/assets/img/check-list-icon.svg
+                            | Meubilair blijft in huis
+                        li 
+                            i.icon
+                                include ../resources/assets/img/check-list-icon.svg
+                            | Stofvrije werkwijze
+                        li 
+                            i.icon
+                                include ../resources/assets/img/check-list-icon.svg
+                            | 30+ jaar familiebedrijf
+                        li 
+                            i.icon
+                                include ../resources/assets/img/check-list-icon.svg
+                            | 100% tevredenheidsgarantie
+
+    section.block.block-relation
+        .relation-wrapper
+            .relation-container
+                .inner-box
+                    .title Stuur ons een email
+                    .desc Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+                    a.stl-btn2.bg2(href="#")
+                        | Verzenden
+                        i.icon
+                            include ../resources/assets/img/arrow-right.svg

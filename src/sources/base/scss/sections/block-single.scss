@@ -1,20 +1,9 @@
-&.block-error {
+&.block-single {
     position: relative;
-    padding: 200px 15px 80px;
+    padding: 0 15px;
+    margin-bottom: 80px;
 
-    .bg-decoration {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: -3;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .error-wrapper {
+    .single-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -208,6 +197,7 @@
     }
 
     @media only screen and (max-width: 768px) {
-        padding: 100px 15px 60px;
+        padding: 0 15px;
+        margin-bottom: 60px;
     }
 }

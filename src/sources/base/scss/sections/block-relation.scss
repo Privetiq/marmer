@@ -23,7 +23,7 @@
                 overflow: hidden;
 
                 .inner-box {
-                    .title, .desc {
+                    .title, .desc, .desc * {
                         color: $wc;
                     }
                 }
@@ -43,7 +43,7 @@
                     margin-bottom: 10px;
                 }
 
-                .desc {
+                .desc, .desc * {
                     flex: 1 1 100%;
                     color: #172330;
                     font: 300 20px/31px $bf;
@@ -124,7 +124,7 @@
                         line-height: 38px;
                     }
 
-                    .desc {
+                    .desc, .desc * {
                         font-size: 18px;
                         line-height: 22px;
                     }
@@ -141,7 +141,7 @@
                         line-height: 32px;
                     }
 
-                    .desc {
+                    .desc, .desc * {
                         font-size: 16px;
                         line-height: 20px;
                     }
@@ -154,7 +154,7 @@
                         line-height: 22px;
                     }
 
-                    .desc {
+                    .desc, .desc * {
                         font-size: 14px;
                         line-height: 18px;
                     }

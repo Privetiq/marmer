@@ -152,7 +152,7 @@
                             }
                         }
 
-                        .desc {
+                        .desc, .desc * {
                             flex: 0 1 382px;
                             color: #192535;
                             font: 300 17px $bf;
@@ -293,7 +293,7 @@
                                 }
                             }
 
-                            .desc {
+                            .desc, .desc * {
                                 flex: 1 1 100%;
                                 font-size: 16px;
                                 line-height: 20px;
@@ -350,7 +350,7 @@
                                 }
                             }
 
-                            .desc {
+                            .desc, .desc * {
                                 font-size: 14px;
                                 line-height: 18px;
                                 text-align: center;

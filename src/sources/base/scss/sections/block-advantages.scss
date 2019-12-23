@@ -14,7 +14,7 @@
             margin-bottom: 40px;
         }
 
-        .desc {
+        .desc, .desc * {
             color: #0e1d2d;
             font: 300 18px/38px $bf;
             margin-bottom: 70px;
@@ -70,7 +70,7 @@
                 line-height: 28px;
             }
 
-            .desc {
+            .desc, .desc * {
                 font-size: 16px;
                 line-height: 28px;
                 margin-bottom: 15px;
@@ -102,7 +102,7 @@
                 line-height: 24px;
             }
 
-            .desc {
+            .desc, .desc * {
                 font-size: 14px;
                 line-height: 18px;
             }

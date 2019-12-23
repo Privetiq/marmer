@@ -78,7 +78,7 @@
                         padding: 40px;
                         margin-bottom: 30px;
 
-                        .desc {
+                        .desc, .desc * {
                             color: #192535;
                             font: 300 16px/27px $bf; 
                         }
@@ -224,7 +224,7 @@
                         }
 
                         .inner-wrapper {
-                            .desc {
+                            .desc, .desc * {
                                 font-size: 14px;
                                 line-height: 18px;
                             }

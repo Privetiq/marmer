@@ -63,7 +63,7 @@
             }
         }
 
-        .desc {
+        .desc, .desc * {
             flex: 1 1 100%;
             color: #192535;
             font: 300 17px/31px $bf;
@@ -136,7 +136,7 @@
                 margin-bottom: 20px;
             }
 
-            .desc {
+            .desc, .desc * {
                 font-size: 16px;
                 line-height: 26px;
                 margin-bottom: 20px;
@@ -144,7 +144,6 @@
         }
 
         @media only screen and (max-width: 768px) {
-
             .main-icon {
                 width: 100px;
                 height: 100px;
@@ -155,16 +154,13 @@
                 }
             }
 
-            .main-icon {
-
-            }
             .main-title {
                 font-size: 24px;
                 line-height: 28px;
                 margin-bottom: 15px;
             }
 
-            .desc {
+            .desc, .desc * {
                 font-size: 14px;
                 line-height: 18px;
                 margin-bottom: 15px;

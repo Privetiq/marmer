@@ -59,6 +59,11 @@ $(document).ready(function () {
         return false;
     });
 
+    $('.header-menu .menu li.with-dropdown > a').on('click', function(){
+        event.preventDefault();
+        console.log('click on dropdown');
+    })
+
     var map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 52.393982, lng: 4.814673 },
         zoom: 8,

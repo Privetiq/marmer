@@ -1,7 +1,7 @@
 &.block-stones {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 
     .stones-wrapper {
         display: flex;
@@ -14,9 +14,9 @@
         .main-title {
             flex: 1 1 100%;
             color: #192535;
-            font: 700 36px/31px $bf;
+            font: 700 32.4px/27.9px $bf;
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 54px;
         }
 
         .stone-block {
@@ -28,20 +28,20 @@
                 display: flex;
                 align-items: center;
                 flex: 1 1 100%;
-                padding: 0 70px;
-                margin-bottom: 25px;
+                padding: 0 63px;
+                margin-bottom: 22.5px;
 
                 .img {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 60px;
-                    height: 60px;
+                    width: 54px;
+                    height: 54px;
                     border-radius: 50%;
                     background: $wc;
                     border: 1px solid #D29B73;
                     overflow: hidden;
-                    margin-right: 20px;
+                    margin-right: 18px;
                     
                     img {
                         width: 100%;
@@ -51,30 +51,30 @@
                 .name {
                     flex: 1 1;
                     color: #192535;
-                    font: 600 20px/20px $bf;
+                    font: 600 18px/18px $bf;
                 }
             }
         }
         
         @media only screen and (max-width: 992px) {
             .main-title {
-                font-size: 28px;
-                line-height: 30px;
-                margin-bottom: 30px;
+                font-size: 25.2px;
+                line-height: 27px;
+                margin-bottom: 27px;
             }
 
             .stone-block {
                 .name {
-                    font-size: 18px;
-                    line-height: 18px;
+                    font-size: 16.2px;
+                    line-height: 16.2px;
                 }
             }
         }
 
         @media only screen and (max-width: 768px) {
             .main-title {
-                font-size: 24px;
-                line-height: 28px;
+                font-size: 21.6px;
+                line-height: 25.2px;
             }
 
             .stone-block {
@@ -84,8 +84,8 @@
                     padding: 0 15px;
 
                     .name {
-                        font-size: 16px;
-                        line-height: 16px;
+                        font-size: 14.4px;
+                        line-height: 14.4px;
                     }
                 }
             }
@@ -93,13 +93,13 @@
 
         @media only screen and (max-width: 480px) {
             .main-title {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16.2px;
+                line-height: 19.8px;
             }
 
             .stone-block {
                 .name {
-                    font-size: 14px;
+                    font-size: 12.6px;
                 }
             }
         }
@@ -119,10 +119,10 @@
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 54px;
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

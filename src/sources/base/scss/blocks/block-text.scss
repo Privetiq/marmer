@@ -1,7 +1,7 @@
 &.block-text {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 115px;
+    margin-bottom: 103.5px;
     z-index: 10;
     
     .text-wrapper {
@@ -11,14 +11,14 @@
 
         .title {
             color: #0e1d2d;
-            font: 700 36px/38px $bf;
-            margin-bottom: 30px;
+            font: 700 32.4px/34.2px $bf;
+            margin-bottom: 27px;
         }
 
         .desc, .desc * {
             color: #0e1d2d;
-            font: 300 18px/38px $bf;
-            margin-bottom: 30px;
+            font: 300 16.2px/34.2px $bf;
+            margin-bottom: 27px;
         }
 
         .text-slider-container {
@@ -38,8 +38,8 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    width: 46px;
-                    height: 46px;
+                    width: 42px;
+                    height: 42px;
                     top: 50%;
                     border-radius: 50%;
                     border: 1px solid #eaf0f6;
@@ -50,11 +50,11 @@
                     @include trans;
 
                     &.slider-prev {
-                        left: -23px;
+                        left: -21px;
                     }
 
                     &.slider-next {
-                        right: -23px;
+                        right: -21px;
                     }
 
                     svg {
@@ -82,37 +82,37 @@
 
         @media only screen and (max-width: 992px) {
             .title {
-                font-size: 28px;
-                line-height: 30px;
+                font-size: 25.2px;
+                line-height: 27px;
             }
 
-            .desc {
-                font-size: 16px;
-                line-height: 26px;
+            .desc, .desc * {
+                font-size: 14.4px;
+                line-height: 23.4px;
             }
         }
 
         @media only screen and (max-width: 768px) {
             .title {
-                font-size: 24px;
-                line-height: 28px;
+                font-size: 21.6px;
+                line-height: 25.2px;
             }
 
-            .desc {
-                font-size: 14px;
-                line-height: 18px;
+            .desc, .desc * {
+                font-size: 12.6px;
+                line-height: 16.2px;
             }
         }
 
         @media only screen and (max-width: 480px) {
             .title {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16.2px;
+                line-height: 19.8px;
             }
         }
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 80px;
+        margin-bottom: 72px;
     }
 }

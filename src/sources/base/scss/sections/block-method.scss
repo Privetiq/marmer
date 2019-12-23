@@ -1,7 +1,7 @@
 &.block-method {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
     z-index: 1;
 
     .method-wrapper {
@@ -12,7 +12,7 @@
         .main-title {
             width: 100%;
             color: #192535;
-            font: 700 36px/48px $bf;
+            font: 700 32.4px/43.2px $bf;
             text-align: center;
             margin-bottom: 15px;
         }
@@ -20,9 +20,9 @@
         .subtitle {
             width: 100%;
             color: #192535;
-            font: 300 20px/31px $bf;
+            font: 300 18px/28px $bf;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .steps-wrapper {
@@ -30,13 +30,13 @@
             flex-wrap: wrap;
             flex: 1 1 100%;
             position: relative;
-            padding-top: 80px;
+            padding-top: 72px;
 
             .step-line {
                 display: flex;
                 flex: 1 1 100%;
                 position: relative;
-                margin-bottom: 60px;
+                margin-bottom: 54px;
 
                 &.left {
                     justify-content: flex-start;
@@ -84,8 +84,8 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 212px;
-                        height: 212px;
+                        width: 190px;
+                        height: 190px;
                         position: relative;
 
                         .icon-bg {
@@ -125,7 +125,7 @@
                             display: flex;
                             align-items: center;
                             flex: 1 1 100%;
-                            margin-bottom: 25px;
+                            margin-bottom: 22.5px;
 
                             .grow {
                                 flex-grow: 1;
@@ -135,27 +135,27 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                width: 48px;
-                                height: 48px;
+                                width: 44px;
+                                height: 44px;
                                 border-radius: 50%;
                                 background: $wc;
                                 box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
                                 color: #192535;
-                                font: 600 24px $bf;
+                                font: 600 21.6px $bf;
                                 margin-right: 12px;
                             }
 
                             .title {
                                 width: fit-content;
                                 color: #192535;
-                                font: 600 24px $bf;
+                                font: 600 21.6px $bf;
                             }
                         }
 
                         .desc, .desc * {
-                            flex: 0 1 382px;
+                            flex: 0 1 344px;
                             color: #192535;
-                            font: 300 17px $bf;
+                            font: 300 15.3px $bf;
                             padding-left: 12px;
                         }
                     }
@@ -212,30 +212,30 @@
 
         @media only screen and (max-width: 992px) {
             .main-title {
-                font-size: 28px;
+                font-size: 25.2px;
             }
 
             .steps-wrapper {
-                padding-top: 60px;
+                padding-top: 54px;
 
                 .step-line {
                     .step-block {
                         .icon-block {
-                            width: 180px;
-                            height: 180px;
+                            width: 162px;
+                            height: 162px;
 
                         }
 
                         .info-block {
                             .top-line {
                                 .number {
-                                    width: 34px;
-                                    height: 34px;
-                                    font-size: 18px;
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 16.2px;
                                 }
 
                                 .title {
-                                    font-size: 20px;
+                                    font-size: 18px;
                                 }
                             }
                         }
@@ -255,48 +255,48 @@
 
         @media only screen and (max-width: 768px) {
             .main-title {
-                font-size: 24px;
+                font-size: 21.6px;
             }
 
             .subtitle {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16.2px;
+                line-height: 19.8px;
             }
 
             .steps-wrapper {
-                padding-top: 40px;
+                padding-top: 36px;
 
                 .step-line {
                     .step-block {
                         text-align: left !important;
                         
                         .icon-block {
-                            width: 120px;
-                            height: 120px;
+                            width: 108px;
+                            height: 108px;
                             order: 1 !important;
                             margin-left: 0 !important;
                             margin-right: 15px !important;
 
                             .icon-image {
-                                max-width: 40px;
+                                max-width: 36px;
                             }
                         }
 
                         .info-block {
                             .top-line {
                                 justify-content: flex-start !important;
-                                margin-bottom: 20px;
+                                margin-bottom: 18px;
 
                                 .title {
-                                    font-size: 18px;
-                                    line-height: 22px;
+                                    font-size: 16.2px;
+                                    line-height: 19.8px;
                                 }
                             }
 
                             .desc, .desc * {
                                 flex: 1 1 100%;
-                                font-size: 16px;
-                                line-height: 20px;
+                                font-size: 14.4px;
+                                line-height: 18px;
                                 padding-left: 12px !important;
                             }
                         }
@@ -311,16 +311,16 @@
 
         @media only screen and (max-width: 480px) {
             .main-title {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .subtitle {
-                font-size: 16px;
-                line-height: 20px;
+                font-size: 14.4px;
+                line-height: 18px;
             }
 
             .steps-wrapper {
-                padding-top: 30px;
+                padding-top: 27px;
 
                 .step-line {
                     .step-block {
@@ -339,20 +339,20 @@
                                 margin-bottom: 15px;
 
                                 .number {
-                                    width: 28px;
-                                    height: 28px;
-                                    font-size: 16px;
+                                    width: 26px;
+                                    height: 26px;
+                                    font-size: 14.4px;
                                 }
 
                                 .title {
-                                    font-size: 16px;
-                                    line-height: 20px;
+                                    font-size: 14,4px;
+                                    line-height: 18px;
                                 }
                             }
 
                             .desc, .desc * {
-                                font-size: 14px;
-                                line-height: 18px;
+                                font-size: 12.6px;
+                                line-height: 16.2px;
                                 text-align: center;
                             }
                         }
@@ -363,10 +363,10 @@
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 54px;
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

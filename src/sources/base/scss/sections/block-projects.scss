@@ -1,7 +1,7 @@
 &.block-projects {
     position: relative;
-    padding: 80px 15px 0;
-    margin-bottom: 80px;
+    padding: 72px 15px 0;
+    margin-bottom: 72px;
 
     .projects-wrapper {
         max-width: 1340px;
@@ -18,7 +18,7 @@
             .project-block {
                 flex: 0 1 33.33333%;
                 padding: 0 30px;
-                margin-bottom: 80px;
+                margin-bottom: 72px;
 
                 .inner-block {
                     flex: 1 1 100%;
@@ -27,9 +27,9 @@
                 .title {
                     position: relative;
                     color: #192535;
-                    font: 700 25px/48px $bf;
+                    font: 700 22.5px/43.2px $bf;
                     padding-bottom: 5px;
-                    margin-bottom: 20px;
+                    margin-bottom: 18px;
 
                     &:after {
                         display: block;
@@ -44,7 +44,7 @@
                 }
 
                 .slick-slider {
-                    max-width: 400px;
+                    max-width: 360px;
                     
                     .slick-list {
                         border-radius: 0;
@@ -55,7 +55,7 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            height: 310px;
+                            height: 280px;
                             border-radius: 0;
                             overflow: hidden;
 
@@ -106,10 +106,10 @@
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 54px;
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

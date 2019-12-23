@@ -18,16 +18,16 @@
         position: relative;
         max-width: 1500px;
         width: 100%;
-        padding: 70px 0;
+        padding: 63px 0;
         margin: 0 auto;
         z-index: 5;
 
         .footer-block {
             flex: 0 1 25%;
-            padding-right: 30px;
+            padding-right: 27px;
 
             .inner-block {
-                margin-bottom: 40px;
+                margin-bottom: 36px;
                 
                 &:last-child {
                     margin-bottom: 0;
@@ -36,9 +36,9 @@
 
             .title {
                 flex: 1 1 100%;
-                min-height: 33px;
+                min-height: 40px;
                 color: #172330;
-                font: 600 22px $bf;
+                font: 600 19.8px $bf;
                 margin-bottom: 10px;
             }
 
@@ -54,7 +54,7 @@
                         position: relative;
                         flex: 1 1 100%;
                         color: #172330;
-                        font: 500 15px/36px $bf;
+                        font: 500 13.5px/32.4px $bf;
                         @include trans;
 
                         &:after {
@@ -88,15 +88,15 @@
             .address {
                 flex: 1 1 100%;
                 color: #172330;
-                font: 400 15px/28px $bf;
+                font: 400 13.5px/25.2px $bf;
                 margin-bottom: 10px;
             }
 
             .desc {
                 flex: 1 1 100%;
                 color: #172330;
-                font: 400 15px/28px $bf;
-                margin-bottom: 30px;
+                font: 400 13.5px/25.2px $bf;
+                margin-bottom: 27px;
 
                 span {
                     font-weight: 500;
@@ -104,29 +104,75 @@
             }
 
             .rating-box {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 202px;
-                height: 84px;
-                border-radius: 10px;
-                border: 1px solid #e0e4e6;
-                background: #ffffff;
-                box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
-                cursor: pointer;
-                @include trans;
-
-                img {
-                    width: 157px;
-                    height: 60px;
-                }
-
-                &:hover {
-                    transform: translateY(-2px);
-                    box-shadow: 0px 16px 37.6px 2.4px #45535e2b,0px 16px 34px 6px #45535e1f;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 184px;
+                    height: 75.6px;
+                    border-radius: 10px;
+                    border: 1px solid #e0e4e6;
+                    background: #ffffff;
+                    box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
+                    padding: 10.8px 19.8px;
+                    cursor: pointer;
                     @include trans;
+
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 54px;
+                        height: 54px;
+                        color: #484343;
+                        font: 700 16.2px $bf;
+                        background: url(../img/rating-icon-bg.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    }
+
+                    .info {
+                        flex: 1 1;
+
+                        .stars {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex: 1 1;
+                            margin-bottom: 3px;
+
+                            .star {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 14px;
+                                margin-right: 2px;
+
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .number {
+                            color: #484343;
+                            font: 500 21.6px/21.6px $bf;
+                            text-align: center;
+                        }
+
+                        .sub {
+                            color: #484343;
+                            font: 400 10.8px $bf;
+                            text-align: center;
+                        }
+                    }
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0px 16px 37.6px 2.4px #45535e2b,0px 16px 34px 6px #45535e1f;
+                        @include trans;
+                    }
                 }
-            }
 
             &:last-child {
                 padding-right: 0;
@@ -147,11 +193,11 @@
         }
 
         @media only screen and (max-width: 768px) {
-            padding: 60px 0;
+            padding: 54px 0;
         }
 
         @media only screen and (max-width: 480px) {
-            padding: 40px 0;
+            padding: 36px 0;
         }
     }
 
@@ -166,7 +212,7 @@
 
         .copyright {
             color: #172330;
-            font: 400 16px/40px $bf;
+            font: 400 14.4px/36px $bf;
             text-transform: uppercase;
             text-align: center;
         }
@@ -193,7 +239,7 @@
                 flex: 1 1 100%;
                 text-align: center;
                 padding: 0;
-                margin-bottom: 20px;
+                margin-bottom: 18px;
 
                 .title {
                     min-height: auto;

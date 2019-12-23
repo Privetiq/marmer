@@ -1,6 +1,6 @@
 &.block-banner {
     position: relative;
-    padding: 200px 15px 0;
+    padding: 180px 15px 0;
 
     .bg-decoration {
         display: block;
@@ -19,7 +19,7 @@
         display: flex;
         max-width: 1360px;
         width: 100%;
-        margin: 0 auto 160px;
+        margin: 0 auto 144px;
 
         .banner-info {
             flex: 0 1 60%;
@@ -28,9 +28,9 @@
             & > .main-title {
                 flex: 1 1;
                 color: $wc;
-                font: 700 48px $bf;
+                font: 700 43.2px $bf;
                 text-shadow: 0 0 2px #eeeeee;
-                margin-bottom: 50px;
+                margin-bottom: 45px;
             }
 
             .advantages-markers {
@@ -45,17 +45,17 @@
                     justify-content: center;
                     align-items: center;
                     width: fit-content;
-                    padding: 15px;
+                    padding: 13.5px;
                     border-radius: 30px;
                     background: #FFD784;;
-                    margin-right: 25px;
-                    margin-bottom: 30px;
+                    margin-right: 22.5px;
+                    margin-bottom: 27px;
                     cursor: pointer;
                     @include trans;
 
                     span {
                         color: $bc;
-                        font: 700 16px/30px $bf;
+                        font: 700 14.4px/27px $bf;
                     }
 
                     .icon {
@@ -64,8 +64,8 @@
                         margin-right: 10px;
 
                         svg {
-                            width: 23px;
-                            height: 23px;
+                            width: 20px;
+                            height: 20px;
 
                             path, polygon {
                                 fill: #000000;
@@ -105,19 +105,19 @@
         .banner-wrapper {
             .banner-info {
                 & > .main-title {
-                    font-size: 36px;
-                    margin-bottom: 30px;
+                    font-size: 32.4px;
+                    margin-bottom: 27px;
                 }
 
                 .advantages-markers {
                     .marker {
-                        padding: 10px;
-                        margin-right: 10px;
-                        margin-bottom: 10px;
+                        padding: 9px;
+                        margin-right: 9px;
+                        margin-bottom: 9px;
 
                         span {
-                            font-size: 14px;
-                            line-height: 14px;
+                            font-size: 12.6px;
+                            line-height: 12.6px;
                         }
                     }
                 }
@@ -134,7 +134,7 @@
             .banner-info {
                 flex: 1 1 100%;
                 padding-right: 0;
-                margin-bottom: 30px;
+                margin-bottom: 27px;
 
                 & > .main-title {
                     text-align: center;
@@ -156,7 +156,7 @@
 
 @media only screen and (max-width: 768px) {
     &.block-banner {
-        padding: 100px 15px 0;
+        padding: 90px 15px 0;
 
         .block-splash {
             width: calc(100vw + 80px);
@@ -179,11 +179,11 @@
         }
 
         .banner-wrapper {
-            margin-bottom: 80px;
+            margin-bottom: 72px;
 
             .banner-info {
                 & > .main-title {
-                    font-size: 28px;
+                    font-size: 25.2px;
                 }
 
                 .advantages-markers {
@@ -203,7 +203,7 @@
         .banner-wrapper {
             .banner-info {
                 & > .main-title {
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
         }

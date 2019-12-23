@@ -1,7 +1,7 @@
 &.block-demonstration {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 
     .block-splash {
         top: 50%;
@@ -21,7 +21,7 @@
                 margin: 0 auto;
 
                 .form-body {
-                    margin: 0 -80px;
+                    margin: 0 -72px;
 
                     .form-body-box {
                         display: flex;
@@ -30,11 +30,11 @@
                         flex: 1 1 100%;
 
                         .form-title {
-                            margin-bottom: 20px;
+                            margin-bottom: 18px;
                         }
 
                         .form-subtitle {
-                            margin-bottom: 30px;
+                            margin-bottom: 27px;
                         }
 
                         .form-fields {
@@ -68,18 +68,18 @@
                     .form-body {
                         .form-body-box {
                             .form-title {
-                                font-size: 28px;
-                                line-height: 28px;
+                                font-size: 25.2px;
+                                line-height: 25.2px;
 
                                 span {
-                                    font-size: 28px;
-                                    line-height: 28px;
+                                    font-size: 25.2px;
+                                    line-height: 25.2px;
                                 }
                             }
 
                             .form-subtitle {
-                                font-size: 18px;
-                                line-height: 20px;
+                                font-size: 16.2px;
+                                line-height: 18px;
                             }
 
                             .form-fields {
@@ -119,18 +119,18 @@
                             padding: 30px;
 
                             .form-title {
-                                font-size: 24px;
-                                line-height: 24px;
+                                font-size: 21.6px;
+                                line-height: 21.6px;
 
                                 span {
-                                    font-size: 24px;
-                                    line-height: 24px;
+                                    font-size: 21.6px;
+                                    line-height: 21.6px;
                                 }
                             }
 
                             .form-subtitle {
-                                font-size: 16px;
-                                line-height: 18px;
+                                font-size: 14.4px;
+                                line-height: 16.2px;
                             }
 
                             .form-fields {
@@ -148,19 +148,19 @@
                     .form-body {
                         .form-body-box {
                             .form-title {
-                                font-size: 20px;
-                                line-height: 22px;
+                                font-size: 18px;
+                                line-height: 19.8px;
                                 margin-bottom: 15px;
 
                                 span {
-                                    font-size: 20px;
-                                    line-height: 22px;
+                                    font-size: 18px;
+                                    line-height: 19.8px;
                                 }
                             }
 
                             .form-subtitle {
-                                font-size: 14px;
-                                line-height: 16px;
+                                font-size: 12.6px;
+                                line-height: 14.4px;
                                 margin-bottom: 15px;
                             }
 
@@ -170,13 +170,13 @@
 
                                     .form-col {
                                         input {
-                                            height: 40px;
-                                            line-height: 40px;
+                                            height: 36px;
+                                            line-height: 36px;
                                         }
 
                                         button {
-                                            height: 40px;
-                                            font-size: 14px;
+                                            height: 36px;
+                                            font-size: 12.6px;
                                             font-weight: 400;
                                         }
                                     }
@@ -190,10 +190,10 @@
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 54px;
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

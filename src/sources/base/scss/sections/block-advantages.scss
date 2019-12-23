@@ -1,7 +1,7 @@
 &.block-advantages {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 180px;
+    margin-bottom: 162px;
 
     .advantages-wrapper {
         max-width: 1280px;
@@ -10,14 +10,14 @@
 
         .main-title {
             color: #0e1d2d;
-            font: 700 36px/38px $bf;
-            margin-bottom: 40px;
+            font: 700 32.4px/34.2px $bf;
+            margin-bottom: 36px;
         }
 
         .desc, .desc * {
             color: #0e1d2d;
-            font: 300 18px/38px $bf;
-            margin-bottom: 70px;
+            font: 300 16.2px/34.2px $bf;
+            margin-bottom: 63px;
         }
 
         .advantages-container {
@@ -32,7 +32,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    max-width: 560px;
+                    max-width: 504px;
                     width: 100%;
                     border-radius: 7px;
                     background: #ffffff;
@@ -50,7 +50,7 @@
             .advantages-container {
                 .advantage-block {
                     .check-list {
-                        margin-left: 30px;
+                        margin-left: 27px;
                     }
                 }
             }
@@ -58,21 +58,21 @@
 
         @media only screen and (max-width: 992px) {
             .main-title {
-                font-size: 28px;
-                line-height: 32px;
+                font-size: 25.2px;
+                line-height: 28.8px;
                 margin-bottom: 15px;
             }
         }
 
         @media only screen and (max-width: 768px) {
             .main-title {
-                font-size: 24px;
-                line-height: 28px;
+                font-size: 21.6px;
+                line-height: 25.2px;
             }
 
             .desc, .desc * {
-                font-size: 16px;
-                line-height: 28px;
+                font-size: 14.4px;
+                line-height: 25.2px;
                 margin-bottom: 15px;
             }
 
@@ -98,22 +98,22 @@
 
         @media only screen and (max-width: 480px) {
             .main-title {
-                font-size: 20px;
-                line-height: 24px;
+                font-size: 18px;
+                line-height: 21.6px;
             }
 
             .desc, .desc * {
-                font-size: 14px;
-                line-height: 18px;
+                font-size: 12.6px;
+                line-height: 16.2px;
             }
         }
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 80px;
+        margin-bottom: 72px;
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

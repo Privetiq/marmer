@@ -1,7 +1,7 @@
 &.block-reviews {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 
     .bg-decoration {
         display: block;
@@ -23,8 +23,8 @@
             align-items: center;
             flex: 1 1 100%;
             color: #192535;
-            font: 400 48px $bf;
-            margin-bottom: 60px;
+            font: 400 43.2px $bf;
+            margin-bottom: 54px;
 
             span {
                 font-weight: 600;
@@ -32,8 +32,8 @@
             }
 
             .logo {
-                width: 63px;
-                height: 62px;
+                width: 56.7px;
+                height: 55.8px;
                 margin-right: 5px;
 
                 svg, img {
@@ -65,7 +65,7 @@
 
                     .title {
                         color: #192535;
-                        font: 700 20px $bf;
+                        font: 700 18px $bf;
                         margin-bottom: 10px;
                     }
 
@@ -75,12 +75,12 @@
                         border-radius: 4px;
                         background: $wc;
                         box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
-                        padding: 40px;
-                        margin-bottom: 30px;
+                        padding: 36px;
+                        margin-bottom: 27px;
 
                         .desc, .desc * {
                             color: #192535;
-                            font: 300 16px/27px $bf; 
+                            font: 300 14.4px/24.3px $bf; 
                         }
 
                         &:after {
@@ -130,8 +130,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 60px;
-                    height: 120px;
+                    width: 54px;
+                    height: 108px;
                     background: #ffffff;
                     border: 1px solid #E4E6E7;
                     cursor: pointer;
@@ -166,8 +166,8 @@
     @media only screen and (max-width: 1200px) {
         .reviews-wrapper {
             .main-title {
-                font-size: 36px;
-                line-height: 46px;
+                font-size: 32.4px;
+                line-height: 41.4px;
             }
         }
     }
@@ -176,13 +176,13 @@
 
         .reviews-wrapper {
             .main-title {
-                font-size: 28px;
-                line-height: 36px;
-                margin-bottom: 30px;
+                font-size: 25.2px;
+                line-height: 32.4px;
+                margin-bottom: 27px;
 
                 .logo {
-                    width: 43px;
-                    height: 42px;
+                    width: 38.7px;
+                    height: 37.8px;
                 }
             }
         }
@@ -193,13 +193,13 @@
 
         .reviews-wrapper {
             .main-title {
-                font-size: 24px;
-                line-height: 30px;
-                margin-bottom: 20px;
+                font-size: 21.6px;
+                line-height: 27px;
+                margin-bottom: 18px;
 
                 .logo {
-                    width: 33px;
-                    height: 32px;
+                    width: 30px;
+                    height: 28px;
                 }
             }
 
@@ -225,8 +225,8 @@
 
                         .inner-wrapper {
                             .desc, .desc * {
-                                font-size: 14px;
-                                line-height: 18px;
+                                font-size: 12.6px;
+                                line-height: 16.2px;
                             }
                         }
                     }
@@ -240,17 +240,17 @@
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
 
         .reviews-wrapper {
             .main-title {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16.2px;
+                line-height: 21.8px;
                 margin-bottom: 15px;
 
                 .logo {
-                    width: 23px;
-                    height: 22px;
+                    width: 20px;
+                    height: 20px;
                 }
             }
 
@@ -270,10 +270,10 @@
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 54px;
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

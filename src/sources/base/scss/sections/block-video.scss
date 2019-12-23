@@ -1,7 +1,7 @@
 &.block-video {
     position: relative;
     padding: 0 15px;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 
     .block-splash {
         top: 80%;
@@ -23,25 +23,25 @@
             position: relative;
             width: 100%;
             color: #192535;
-            font: 600 48px $bf;
-            margin-bottom: 40px;
+            font: 600 43.2px $bf;
+            margin-bottom: 36px;
 
             .logo {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                max-width: 180px;
+                max-width: 162px;
                 width: 100%;
                 border-radius: 10px;
                 border: 1px solid #e0e4e6;
                 background: $wc;
                 box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
-                padding: 10px 20px;
+                padding: 9px 18px;
                 margin-left: 5px;
 
                 img {
-                    max-width: 112px;
+                    max-width: 100px;
                     width: 100%;
                 }
             }
@@ -54,7 +54,7 @@
                 left: 50%;
                 transform: translateX(-50%) matrix( 1.3144,0,0,1.31439995765686,0,0);
                 color: #1925350d;
-                font: 700 89.775px/1.2 $bf;
+                font: 700 81px/1.2 $bf;
                 text-align: center;
                 z-index: -1;
             }
@@ -101,36 +101,36 @@
             .main-title {
                 .shadow-title {
                     top: 60%;
-                    font-size: 64px;
+                    font-size: 57.6px;
                 }
             }
         }
 
         @media only screen and (max-width: 1200px) {
             .main-title {
-                font-size: 36px;
+                font-size: 32.4px;
 
                 .logo {
-                    max-width: 140px;
+                    max-width: 126px;
                 }
 
                 .shadow-title {
-                    font-size: 50px;
+                    font-size: 45px;
                 }
             }
         }
 
         @media only screen and (max-width: 992px) {
             .main-title {
-                font-size: 28px;
+                font-size: 25.2px;
 
                 .logo {
-                    max-width: 80px;
+                    max-width: 72px;
                     padding: 5px 10px;
                 }
                 
                 .shadow-title {
-                    font-size: 38px;
+                    font-size: 34.2px;
                 }
             }
         }
@@ -138,17 +138,17 @@
         @media only screen and (max-width: 768px) {
             .main-title {
                 flex-direction: column;
-                font-size: 24px;
+                font-size: 21.6px;
                 text-align: center;
 
                 .logo {
-                    max-width: 60px;
+                    max-width: 54px;
                     padding: 5px 10px;
                     order: 1;
                 }
 
                 .shadow-title {
-                    font-size: 28px;
+                    font-size: 25.2px;
                 }
             }
         }
@@ -156,14 +156,14 @@
         @media only screen and (max-width: 568px) {
             .main-title {
                 .shadow-title {
-                    font-size: 22px;
+                    font-size: 19.8px;
                 }
             }
         }
 
         @media only screen and (max-width: 480px) {
             .main-title {
-                font-size: 20px;
+                font-size: 18px;
 
                 .shadow-title {
                     top: 100%;
@@ -174,7 +174,7 @@
     }
 
     @media only screen and (max-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 54px;
         
         .block-splash {
             max-width: 100%;
@@ -182,6 +182,6 @@
     }
 
     @media only screen and (max-width: 480px) {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

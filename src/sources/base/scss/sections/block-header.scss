@@ -369,12 +369,58 @@
                     border: 1px solid #e0e4e6;
                     background: #ffffff;
                     box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
+                    padding: 12px 22px;
                     cursor: pointer;
                     @include trans;
 
-                    img {
-                        width: 157px;
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
                         height: 60px;
+                        color: #484343;
+                        font: 700 18px $bf;
+                        background: url(../img/rating-icon-bg.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    }
+
+                    .info {
+                        flex: 1 1;
+
+                        .stars {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex: 1 1;
+                            margin-bottom: 3px;
+
+                            .star {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 14px;
+                                margin-right: 2px;
+
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .number {
+                            color: #484343;
+                            font: 500 24px/24px $bf;
+                            text-align: center;
+                        }
+
+                        .sub {
+                            color: #484343;
+                            font: 400 12px $bf;
+                            text-align: center;
+                        }
                     }
 
                     &:hover {
@@ -387,7 +433,11 @@
         }
     }
 }
-
+:root {
+  --star-size: 60px;
+  --star-color: #fff;
+  --star-background: #fc0;
+}
 @media only screen and (max-width: 1600px) {
     &.block-header {
         padding: 0 30px;

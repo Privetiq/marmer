@@ -40,6 +40,36 @@
                 flex-wrap: wrap;
                 flex: 1 1 100%;
 
+                &.white {
+                    .marker {
+                        background: #ffffff;
+                        @include trans;
+
+                        .icon {
+                            svg {
+                                path, polygon {
+                                    fill: #FFD784;
+                                    @include trans;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            background: #FFD784;
+                            @include trans;
+
+                            .icon {
+                                svg {
+                                    path, polygon {
+                                        fill: $bc;
+                                        @include trans;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .marker {
                     display: flex;
                     justify-content: center;
@@ -47,7 +77,7 @@
                     width: fit-content;
                     padding: 13.5px;
                     border-radius: 30px;
-                    background: #FFD784;;
+                    background: #FFD784;
                     margin-right: 22.5px;
                     margin-bottom: 27px;
                     cursor: pointer;

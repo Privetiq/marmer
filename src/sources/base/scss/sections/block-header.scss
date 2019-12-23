@@ -366,6 +366,14 @@
                     }
                 }
 
+                &.icon2 {
+                    a {
+                        &:before {
+                            background: url(../img/phone-icon2.png) no-repeat center center / 100%;
+                        }
+                    }
+                }
+
                 a {
                     display: flex;
                     flex-wrap: wrap;
@@ -406,7 +414,6 @@
             .header-rating {
                 flex: 0 0 184px;
                 padding-left: 80px;
-                //margin-left: 65px;
 
                 .rating-box {
                     display: flex;

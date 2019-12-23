@@ -1,4 +1,4 @@
-extends layout/layout
+extends layout/layout5
 block title
     title Marmer Behandelen
 block content
@@ -196,10 +196,10 @@ block content
                             .form-fields
                                 .form-row
                                     .form-col
-                                        input(type="text", name="fullname", placeholder="Full Name")
+                                        input(name="fullname", type="text", placeholder="Full Name")
                                         .error Please, enter correct name
                                     .form-col
-                                        input(type="text", name="email", placeholder="Email")
+                                        input(name="email", type="text", placeholder="Email")
                                         .error Please, enter correct email
                                     .form-col
                                         button.stl-btn2(type="submit")
@@ -212,13 +212,15 @@ block content
     section.block.block-stones
         .stones-wrapper
             .main-title Wij onderhouden de volgende natuurstenen 
-            .stones-container
-                .stone-item: +stone('assets/img/stone1.jpg', 'Marmer')
-                .stone-item: +stone('assets/img/stone4.jpg', 'Graniet')
-                .stone-item: +stone('assets/img/stone7.jpg', 'Gneis')
-                .stone-item: +stone('assets/img/stone2.jpg', 'Traverti')
-                .stone-item: +stone('assets/img/stone5.jpg', 'Kwartsiet')
-                .stone-item: +stone('assets/img/stone8.jpg', 'Kalksteen')
-                .stone-item: +stone('assets/img/stone3.jpg', 'Leisteen')
-                .stone-item: +stone('assets/img/stone6.jpg', 'Belgisch hardsteen')
-                .stone-item: +stone('assets/img/stone9.jpg', 'Chinees  hardsteen')
+            ul.stone-block
+                +stone('assets/img/stone1.jpg', 'Marmer')
+                +stone('assets/img/stone2.jpg', 'Traverti')
+                +stone('assets/img/stone3.jpg', 'Leisteen')
+            ul.stone-block
+                +stone('assets/img/stone4.jpg', 'Graniet')
+                +stone('assets/img/stone5.jpg', 'Kwartsiet')
+                +stone('assets/img/stone6.jpg', 'Belgisch hardsteen')
+            ul.stone-block
+                +stone('assets/img/stone7.jpg', 'Gneis')
+                +stone('assets/img/stone8.jpg', 'Kalksteen')
+                +stone('assets/img/stone9.jpg', 'Chinees  hardsteen')

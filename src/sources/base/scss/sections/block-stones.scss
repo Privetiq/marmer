@@ -1,6 +1,6 @@
 &.block-stones {
     position: relative;
-    padding: 0 15px;
+    padding: 30px 15px 0;
     margin-bottom: 72px;
 
     .stones-wrapper {
@@ -19,15 +19,15 @@
             margin-bottom: 54px;
         }
 
-        .stone-block {
+        .stones-container {
             display: flex;
             flex-wrap: wrap;
-            flex: 0 1 33.33333%;
+            flex: 1 1 100%;
 
-            li {
+            .stone-item {
                 display: flex;
                 align-items: center;
-                flex: 1 1 100%;
+                flex: 0 1 33.33333%;
                 padding: 0 63px;
                 margin-bottom: 22.5px;
 
@@ -49,9 +49,16 @@
                 }
 
                 .name {
-                    flex: 1 1;
                     color: #192535;
                     font: 600 18px/18px $bf;
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 1200px)  {
+            .stones-container {
+                .stone-item {
+                    padding: 0 30px;
                 }
             }
         }
@@ -63,10 +70,14 @@
                 margin-bottom: 27px;
             }
 
-            .stone-block {
-                .name {
-                    font-size: 16.2px;
-                    line-height: 16.2px;
+            .stones-container {
+                .stone-item {
+                    flex: 0 1 50%;
+
+                    .name {
+                        font-size: 16.2px;
+                        line-height: 16.2px;
+                    }
                 }
             }
         }
@@ -77,10 +88,10 @@
                 line-height: 25.2px;
             }
 
-            .stone-block {
-                flex: 1 1 100%;
-                
-                li {
+            .stones-container {
+                .stone-item {
+                    justify-content: center;
+                    flex: 1 1 100%;
                     padding: 0 15px;
 
                     .name {
@@ -97,9 +108,11 @@
                 line-height: 19.8px;
             }
 
-            .stone-block {
-                .name {
-                    font-size: 12.6px;
+            .stones-container {
+                .stone-item {
+                    .name {
+                        font-size: 12.6px;
+                    }
                 }
             }
         }

@@ -68,6 +68,32 @@
             font: 600 9.9px $bf;
         }
 
+        button {
+            cursor: pointer;
+
+            &.in-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 46px;
+                height: 46px;
+                border-radius: 3px;
+                background: #172330;
+                box-shadow: 0px 4px 7.84px 0.16px #4b545e17;
+                color: #ffffff;
+                font: 400 30px $bf;
+                @include trans;
+
+                &.sub {margin-right: 5px;}
+                &.add {margin-left: 5px;}
+
+                &:hover {
+                    background: #52677c;
+                    @include trans;
+                }
+            }
+        }
+
         input {
             display: block;
             position: relative;
@@ -80,6 +106,59 @@
             font: 600 12.6px/44px $bf;
             padding: 0 15px;
             margin-bottom: 15px;
+
+            &.radio {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                margin: 10px 0 0 7px;
+
+                & + label {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 30px;
+                    border: 1px solid #ccd5dd;
+                    background: #ffffff;
+                    box-shadow: 0px 4px 7.84px 0.16px #4b545e17;
+                    color: #172330;
+                    font: 600 12.6px $bf;
+                    padding: 0 40px;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    @include trans;
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        content: url(../img/check-icon2.png);
+                        width: 23px;
+                        height: 23px;
+                        top: 50%;
+                        left: 15px;
+                        transform: translateY(-50%);
+                        color: #ffd688;
+                        font-size: 20px;
+                        z-index: 1;
+                    }
+                }
+
+                &:checked {
+                    & + label {
+                        background: #242a36;
+                        border: 1px solid #242a36;
+                        color: #ffffff;
+                        @include trans;
+                    }
+                }
+            }
+
+            &.input-number {
+                text-align: center;
+            }
 
             &::placeholder {
                 color: #172330;
@@ -107,6 +186,115 @@
             }
         }
 
+        .select-box {
+            display: flex;
+            align-items: stretch;
+            position: relative;
+            flex: 1 1;
+            height: 42px;
+            background: #fffffff2;
+            border: 1px solid #cad6de;
+            border-radius: 3px;
+            margin-bottom: 15px;
+
+            .select-hidden {
+                display: none;
+                visibility: hidden;
+            }
+
+            .select {
+                flex: 1 1;
+                height: 100%;
+            }
+
+            .select-styled {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                color: #172330;
+                font: 600 12.6px/44px $bf;
+                padding: 0 15px;
+                word-wrap: normal;
+                overflow: hidden;
+                cursor: pointer;
+                @include trans;
+
+                &:after {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    background: #ffffff url('https://api.iconify.design/mdi-chevron-down.svg') no-repeat center center / 20px;
+                    z-index: 1;
+                    @include trans;
+                }
+
+                &:active, &.active {
+                    &:after {
+                        transform: translateY(-50%) rotate(-180deg);
+                        @include trans;
+                    }
+                }
+            }
+
+            .select-options {
+                display: none; 
+                position: absolute;
+                max-height: 200px;
+                top: calc(100% + 3px);
+                right: 0;
+                left: 0;
+                margin: 0;
+                background: #fffffff2;
+                border: 1px solid #d7d7d7;
+                border-radius: 3px;
+                overflow: auto;
+                z-index: 10;
+
+                li {
+                    color: #000000;
+                    font: 400 14px $bf;
+                    margin: 0;
+                    padding: 12px 5px;
+                    cursor: pointer;
+                    @include trans;
+
+                    &:hover {
+                        background: #cecece;
+                        @include trans;
+                    }
+
+                    &[rel="hide"] {
+                        display: none;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    padding: 0 1px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #D7D7D7;
+                    border: 1px solid #ffffff;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    width: 5px;
+                    background: #167EE2;
+                    border-radius: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #1266B5;
+                }
+            }
+        }
+
         .form-row {
             display: flex;
             align-items: center;
@@ -114,6 +302,7 @@
             margin: 0 -10px;
 
             .form-col {
+                display: flex;
                 position: relative;
                 flex: 1 1;
                 padding: 0 10px;
@@ -299,6 +488,7 @@
         }
     }
 }
+
 
 @media only screen and (max-width: 1200px) {
     &.block-form {

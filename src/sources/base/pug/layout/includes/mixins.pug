@@ -61,3 +61,13 @@ mixin advmark(name)
     .marker
         i.icon: include ../../../resources/assets/img/checkbox.svg
         span=name
+
+mixin project
+    .project-block
+        .inner-block
+            .title Belgisch Hardsteen
+            .slider-wrapper
+                .project-slider.slider-dots
+                    .slide: .preview-image: img(src="assets/img/project-image.jpg", alt="project image")
+                    .slide: .preview-image: img(src="assets/img/project-image.jpg", alt="project image")
+                    .slide: .preview-image: img(src="assets/img/project-image.jpg", alt="project image")

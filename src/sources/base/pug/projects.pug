@@ -3,14 +3,11 @@ block title
     title Marmer Behandelen | Projects
 block content
     section.block.block-banner.with-splash
-        .bg-decoration
-            img(src="assets/img/decoration1.png", alt="decoration background")
+        .bg-decoration: img(src="assets/img/decoration1.png", alt="decoration background")
 
         .block.block-splash
-            .splash-bg
-                img(src="assets/img/splash-bg1.png", alt="splash background")
-            .splash-img
-                img(src="assets/img/splash-img1.png", alt="splash image")
+            .splash-bg: img(src="assets/img/splash-bg1.png", alt="splash background")
+            .splash-img: img(src="assets/img/splash-img1.png", alt="splash image")
 
         .banner-wrapper
             .banner-info
@@ -47,8 +44,7 @@ block content
                         .form-button
                             button.stl-btn1(type="submit")
                                 |   Verzenden
-                                i.icon
-                                    include ../resources/assets/img/arrow-right.svg
+                                i.icon: include ../resources/assets/img/arrow-right.svg
 
     +text(false, 'Voorbeelden van onze projecten', 'Hieronder vindt u voorbeelden van onze projecten terug Klik op een afbeelding voor de vergroting. Natuurstenen vloer weer als nieuw? Wilt u uw vloer ook laten stralen? We komen graag bij u langs om u verder te helpen met een passend advies & voorstel.')
 
@@ -60,28 +56,11 @@ block content
                     .desc Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
                     a.stl-btn2.bg2(href="#")
                         | Verzenden
-                        i.icon
-                            include ../resources/assets/img/arrow-right.svg
+                        i.icon: include ../resources/assets/img/arrow-right.svg
 
     section.block.block-projects
         .projects-wrapper
             .inner-wrapper
-                mixin project()
-                    .project-block
-                        .inner-block
-                            .title Belgisch Hardsteen
-                            .slider-wrapper
-                                .project-slider.slider-dots
-                                    .slide
-                                        .preview-image
-                                            img(src="assets/img/project-image.jpg", alt="project image")
-                                    .slide
-                                        .preview-image
-                                            img(src="assets/img/project-image.jpg", alt="project image")
-                                    .slide
-                                        .preview-image
-                                            img(src="assets/img/project-image.jpg", alt="project image")
-
                 +project
                 +project
                 +project
@@ -90,8 +69,7 @@ block content
                 +project
 
     section.block.block-reviews
-        .bg-decoration
-            img(src="assets/img/decoration2.png", alt="decoration background")
+        .bg-decoration: img(src="assets/img/decoration2.png", alt="decoration background")
 
         .reviews-wrapper
             .main-title
@@ -111,15 +89,11 @@ block content
                     +slide('Abraham Lincoln, Function of this great person')
                     +slide('Bob Marley, Function of this great person')
                 .slider-controls
-                    .slider-control.slider-prev
-                        include ../resources/assets/img/arrow-up.svg
-                    .slider-control.slider-next
-                        include ../resources/assets/img/arrow-down.svg
+                    .slider-control.slider-prev: include ../resources/assets/img/arrow-up.svg
+                    .slider-control.slider-next: include ../resources/assets/img/arrow-down.svg
 
     section.block.block-demonstration
-        .block.block-splash
-            .splash-img
-                img(src="assets/img/splash-bg3.png", alt="splash background")
+        .block.block-splash: .splash-img: img(src="assets/img/splash-bg3.png", alt="splash background")
                 
         .demonstration-wrapper
             .block.block-form
@@ -144,7 +118,6 @@ block content
                                     .form-col
                                         button.stl-btn2(type="submit")
                                             | Verzenden
-                                            i.icon
-                                                include ../resources/assets/img/arrow-right.svg
+                                            i.icon: include ../resources/assets/img/arrow-right.svg
 
 

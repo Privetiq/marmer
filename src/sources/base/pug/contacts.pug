@@ -3,14 +3,11 @@ block title
     title Marmer Behandelen | Contacts
 block content
     section.block.block-banner.with-splash
-        .bg-decoration
-            img(src="assets/img/decoration1.png", alt="decoration background")
+        .bg-decoration: img(src="assets/img/decoration1.png", alt="decoration background")
 
         .block.block-splash
-            .splash-bg
-                img(src="assets/img/splash-bg5.png", alt="splash background")
-            .splash-img
-                img(src="assets/img/splash-img3.png", alt="splash image")
+            .splash-bg: img(src="assets/img/splash-bg5.png", alt="splash background")
+            .splash-img: img(src="assets/img/splash-img3.png", alt="splash image")
 
         .banner-wrapper
             .banner-info
@@ -40,8 +37,7 @@ block content
                         .form-button
                             button.stl-btn1(type="submit")
                                 |   Verzenden
-                                i.icon
-                                    include ../resources/assets/img/arrow-right.svg
+                                i.icon: include ../resources/assets/img/arrow-right.svg
 
     section.block.block-contacts
         .contacts-wrapper
@@ -67,12 +63,8 @@ block content
                             .contact-box
                                 .title Follow
                                 ul.soc
-                                    li
-                                        a.fb(href="#")
-                                            include ../resources/assets/img/soc-icon1.svg
-                                    li
-                                        a.in(href="#")
-                                            include ../resources/assets/img/soc-icon2.svg
+                                    li: a.fb(href="#"): include ../resources/assets/img/soc-icon1.svg
+                                    li: a.in(href="#"): include ../resources/assets/img/soc-icon2.svg
 
                 .contacts-block
                     .inner-wrapper
@@ -104,5 +96,4 @@ block content
                                     .form-col
                                         button.stl-btn2(type="submit")
                                             | Verzenden
-                                            i.icon
-                                                include ../resources/assets/img/arrow-right.svg
+                                            i.icon: include ../resources/assets/img/arrow-right.svg

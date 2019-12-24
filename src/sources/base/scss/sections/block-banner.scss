@@ -2,6 +2,12 @@
     position: relative;
     padding: 180px 15px 0;
 
+    &.sm {
+        .banner-wrapper {
+            max-width: 1000px;
+        }
+    }
+
     .bg-decoration {
         display: block;
         position: absolute;

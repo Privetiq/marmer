@@ -5,15 +5,12 @@ block content
     section.block.block-single
         .single-wrapper
             .main-icon 
-                .icon-bg
-                    img(src="assets/img/step-icon-bg1.png", alt="")
-                .icon-img
-                    img(src="assets/img/error-icon.png", alt="")
+                .icon-bg: img(src="assets/img/step-icon-bg1.png", alt="")
+                .icon-img: img(src="assets/img/error-icon.png", alt="")
 
             .main-title Page Not Found
             .desc The Page You Requested Could Not Be Found
             .btn-wrapper
                 a.stl-btn1(href="#") 
                     | Back to home
-                    i.icon
-                        include ../resources/assets/img/arrow-right.svg
+                    i.icon: include ../resources/assets/img/arrow-right.svg

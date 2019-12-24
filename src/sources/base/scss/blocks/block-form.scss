@@ -306,6 +306,56 @@
                 position: relative;
                 flex: 1 1;
                 padding: 0 10px;
+
+                .custom-radio {
+                    input {
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+
+                        & + span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            width: 100%;
+                            height: 48px;
+                            border-radius: 30px;
+                            border: 1px solid #ccd5dd;
+                            background: #ffffff;
+                            box-shadow: 0px 4px 7.84px 0.16px #4b545e17;
+                            color: #172330;
+                            font: 600 12.6px $bf;
+                            padding: 0 40px;
+                            margin-bottom: 15px;
+                            cursor: pointer;
+                            @include trans;
+
+                            &:before {
+                                display: block;
+                                position: absolute;
+                                content: url(../img/check-icon2.png);
+                                width: 23px;
+                                height: 23px;
+                                top: 50%;
+                                left: 15px;
+                                transform: translateY(-50%);
+                                color: #ffd688;
+                                font-size: 20px;
+                                z-index: 1;
+                            }
+                        }
+
+                        &:checked {
+                            & + span {
+                                background: #242a36;
+                                border: 1px solid #242a36;
+                                color: #ffffff;
+                                @include trans;
+                            }
+                        }
+                    }
+                }
             }
 
             &:last-child {

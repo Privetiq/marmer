@@ -49,12 +49,27 @@ block content
 
                                 .form-row
                                     .form-col
+                                        button.in-btn.sub(type="button") -
+                                        span.wpcf7-form-control-wrap.number-232
+                                            input(type="number" name="number-232" value="1" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number" aria-invalid="false")
+                                        button.in-btn.add(type="button") +
+
+                                .form-row
+                                    .form-col
                                         .select-box
                                             select.custom-select
                                                 option(value="") Option 1
-                                                option(value="") Option 2
+                                                option(value="", selected="") Option 2
                                                 option(value="") Option 3
                                                 option(value="") Option 4
+
+                                .form-row
+                                    .form-col
+                                        select.wpcf7-select
+                                            option(value="") Option 1
+                                            option(value="", selected="") Option 2
+                                            option(value="") Option 3
+                                            option(value="") Option 4
                                 
                                 .form-row
                                     .form-col
@@ -67,6 +82,25 @@ block content
                                     .form-col
                                         textarea(name="message", placeholder="Message")
                                         .error Enter some message
+
+                                .form-row
+                                    .form-col
+                                        span.wpcf7-form-control-wrap.menu-48
+                                            select(name="menu-48" class="wpcf7-form-control wpcf7-select" aria-invalid="false")
+                                                option(value="option 1") option 1
+                                                option(value="option 2", selected) option 2
+                                                option(value="option 3") option 3
+
+                                .form-row
+                                    .form-col
+                                        span.wpcf7-form-control-wrap.radio-692
+                                            span.wpcf7-form-control.wpcf7-radio
+                                                span.wpcf7-list-item.first
+                                                    input.wpc7-input(type="radio" name="radio-692" value="First Option" checked="checked")
+                                                    span.wpcf7-list-item-label First Option
+                                                span.wpcf7-list-item.last
+                                                    input.wpc7-input(type="radio" name="radio-692" value="Second")
+                                                    span.wpcf7-list-item-label Second
                             
                             .form-body-success
                                 .main-icon 

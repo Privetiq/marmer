@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
-    //input number
-    $('.add').click(function () {
-        $(this).prev().val(+$(this).prev().val() + 1);
-        $(this).siblings('span').parent('input').val(+$(this).prev().val() + 1);
-    });
-    $('.sub').click(function () {
-        if ($(this).next().val() > 1) {
-            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-        }
-    });
+    // //input number
+    // $('.add').click(function () {
+    //     $(this).prev().val(+$(this).prev().val() + 1);
+    //     $(this).siblings('span').parent('input').val(+$(this).prev().val() + 1);
+    // });
+    // $('.sub').click(function () {
+    //     if ($(this).next().val() > 1) {
+    //         if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    //     }
+    // });
 
     //wpf7------------
     //checkbox & radio
@@ -29,7 +29,7 @@ $(document).ready(function () {
     });
 
     //custom select
-    $('.select-box select').each(function () {
+    $('.select-box select, .wpcf7-select').each(function () {
         var $this = $(this), numberOfOptions = $(this).children('option').length;
 
         $this.addClass('select-hidden');

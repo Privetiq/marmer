@@ -68,12 +68,25 @@ block content
                                         textarea(name="message", placeholder="Message")
                                         .error Enter some message
                             
-                            .form-body-hide
+                            .form-body-success
                                 .main-icon 
                                     .icon-bg: img(src="assets/img/step-icon-bg3.png", alt="")
                                     .icon-img: img(src="assets/img/thank-icon.png", alt="")
                                 .main-title Thank you for your request
-                                .desc Check your e-mail for further instructions
+                                .main-subtitle Check your e-mail for further instructions
+                                a.stl-btn1(href="#")
+                                    |   Verzenden
+                                    i.icon: include ../resources/assets/img/arrow-right.svg
+
+                            .form-body-error
+                                .main-icon 
+                                    .icon-bg: img(src="assets/img/step-icon-bg1.png", alt="")
+                                    .icon-img: img(src="assets/img/error-icon.png", alt="")
+                                .main-title Something went wrong
+                                .main-subtitle Please come back and try again
+                                a.stl-btn1(href="#")
+                                    |   Go back
+                                    i.icon: include ../resources/assets/img/arrow-right.svg
                         .form-button
                             button.stl-btn1(type="submit")
                                 |   Verzenden

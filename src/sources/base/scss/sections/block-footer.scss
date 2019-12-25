@@ -147,9 +147,21 @@
                                 width: 14px;
                                 margin-right: 2px;
 
-                                img {
+                                &.star-full {
+                                    background: url(../img/star-icon1.png);
+                                    background-size: cover;
+                                }
+
+                                &.star-half {
+                                    background: url(../img/star-icon2.png);
+                                    background-size: cover;
+                                }
+
+                                &:before {
+                                    content: '';
                                     display: block;
-                                    width: 100%;
+                                    width: 14px;
+                                    height: 14px;
                                 }
                             }
                         }

@@ -303,11 +303,18 @@
 
             .form-col {
                 display: flex;
+                flex-wrap: wrap;
                 position: relative;
                 flex: 1 1;
                 padding: 0 10px;
 
-                .custom-radio {
+                label {
+                  font: 600 16px "Poppins",sans-serif;
+                  width: 100%;
+                  padding-bottom: 10px;
+                }
+
+                &.custom-radio {
                     input {
                         position: absolute;
                         z-index: -1;

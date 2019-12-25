@@ -4,6 +4,7 @@
 /dist
 /phonegap/www
 /php/public/assets/*
+/.idea/*
 
 # Compiled source #
 ###################

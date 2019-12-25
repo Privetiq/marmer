@@ -62,6 +62,13 @@ html {
             &:nth-child(4) { left: calc(50% + 320px); }
             &:nth-child(5) { left: calc(50% + 640px); }
         }
+
+        .desc {
+            a {
+                font-weight: 500 !important;
+                text-decoration: underline;
+            }
+        }
     }
     
     .block {

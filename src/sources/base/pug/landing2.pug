@@ -6,11 +6,17 @@ block content
         .bg-decoration
             img(src="assets/img/decoration1.png", alt="decoration background")
 
-        .block.block-splash
-            .splash-bg
-                img(src="assets/img/splash-bg6.png", alt="splash background")
-            .splash-img
-                img(src="assets/img/splash-img4.png", alt="splash image")
+        .block.block-splash.splash3
+            .splash-bg: img(src="assets/img/splash-bg6.png", alt="splash background")
+            .splash-img 
+                img.shadow1(src="assets/img/mask-shadow1.png", alt="")
+                img.shadow2(src="assets/img/mask-shadow2.png", alt="")
+                img.image(src="assets/img/splash-img1.jpg", alt="splash image")
+        //- .block.block-splash
+        //-     .splash-bg
+        //-         img(src="assets/img/splash-bg6.png", alt="splash background")
+        //-     .splash-img
+        //-         img(src="assets/img/splash-img4.png", alt="splash image")
 
         .banner-wrapper
             .banner-info
@@ -33,14 +39,14 @@ block content
                                 .form-row
                                     .form-col
                                         input(name="full name", type="text", placeholder="Full name")
-                                        .error Enter full name
+                                        .error-msg Enter full name
                                 .form-row
                                     .form-col
                                         input(name="email", type="text", placeholder="Email")
-                                        .error Enter correct email
+                                        .error-msg Enter correct email
                                     .form-col
                                         input(name="phone", type="text", placeholder="Phone")
-                                        .error Enter correct phone
+                                        .error-msg Enter correct phone
                                 .form-row
                                     .form-col
                                         button.in-btn.sub(type="button") -

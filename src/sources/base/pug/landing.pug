@@ -5,9 +5,12 @@ block content
     section.block.block-banner.with-splash
         .bg-decoration: img(src="assets/img/decoration1.png", alt="decoration background")
 
-        .block.block-splash
+        .block.block-splash.splash2
             .splash-bg: img(src="assets/img/splash-bg4.png", alt="splash background")
-            .splash-img: img(src="assets/img/splash-img2.png", alt="splash image")
+            .splash-img 
+                img.shadow1(src="assets/img/mask-shadow3.png", alt="")
+                img.shadow2(src="assets/img/mask-shadow2.png", alt="")
+                img.image(src="assets/img/splash-img2.jpg", alt="splash image")
 
         .banner-wrapper
             .banner-info
@@ -30,18 +33,18 @@ block content
                                 .form-row
                                     .form-col
                                         input(name="full name", type="text", placeholder="Full name")
-                                        .error Enter full name
+                                        .error-msg Enter full name
                                 .form-row
                                     .form-col
                                         input(name="email", type="text", placeholder="Email")
-                                        .error Enter correct email
+                                        .error-msg Enter correct email
                                     .form-col
                                         input(name="phone", type="text", placeholder="Phone")
-                                        .error Enter correct phone
+                                        .error-msg Enter correct phone
                                 .form-row
                                     .form-col
                                         textarea(name="message", placeholder="Message")
-                                        .error Enter some message
+                                        .error-msg Enter some message
                         .form-button
                             button.stl-btn1(type="submit")
                                 |   Verzenden

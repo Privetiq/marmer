@@ -607,7 +607,7 @@
                                 display: flex;
                                 justify-content: center;
 
-                                &.with-dropdown {
+                                &.dropdown {
                                     flex-wrap: wrap;
 
                                     .dropdown-menu {
@@ -620,7 +620,7 @@
                                         background: transparent;
                                         box-shadow: none;
 
-                                        .drop-item {
+                                        & > .menu-item {
                                             width: 100%;
                                             text-align: center;
                                             border: none;

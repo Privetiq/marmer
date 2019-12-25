@@ -1,16 +1,4 @@
 $(document).ready(function () {
-
-    // //input number
-    // $('.add').click(function () {
-    //     $(this).prev().val(+$(this).prev().val() + 1);
-    //     $(this).siblings('span').parent('input').val(+$(this).prev().val() + 1);
-    // });
-    // $('.sub').click(function () {
-    //     if ($(this).next().val() > 1) {
-    //         if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-    //     }
-    // });
-
     //wpf7------------
     //checkbox & radio
     $('.wpcf7-list-item .wpcf7-list-item-label').on('click', function(){
@@ -81,6 +69,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '120px',
+        infinite: false, 
         vertical: true,
         responsive: [
             {

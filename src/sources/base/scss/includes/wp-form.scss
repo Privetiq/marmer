@@ -5,7 +5,7 @@
         display: flex;
         align-items: center;
         flex: 1 1 100%;
-        margin: 0 -5px;
+        
 
         .wpcf7-list-item {
             flex: 0 1 50%;
@@ -18,5 +18,23 @@
 input {
     &.wpcf7-number {
         margin: 0 auto 15px;
+    }
+}
+
+span {
+    &.wpcf7-not-valid-tip {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        color: #f00;
+        font: 300 9px $bf;
+        z-index: 2;
+    }
+}
+
+div {
+    &.wpcf7-validation-errors {
+        color: #ffffff;
+        font: 300 12px $bf;
     }
 }

@@ -36,7 +36,18 @@ mixin step(cls, bgsrc, imgsrc, number, title, desc)
 mixin slide(title)
     .slide
         .title=title
-        .inner-wrapper: .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        .inner-wrapper
+            .image 8
+            .info
+                .stars
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star2.svg", alt="")
+                .theme Helemaal top!!!
+                .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .date 09.01.2020
 
 mixin stone(src, name)
     .img: img(src=src, alt="stone preview")

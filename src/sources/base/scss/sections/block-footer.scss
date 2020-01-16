@@ -9,6 +9,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -3;
+
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 
     .footer-wrapper {
@@ -54,7 +59,7 @@
                         position: relative;
                         flex: 1 1 100%;
                         color: #172330;
-                        font: 500 13.5px/32.4px $bf;
+                        font: 500 15px/35px $bf;
                         @include trans;
 
                         &:after {

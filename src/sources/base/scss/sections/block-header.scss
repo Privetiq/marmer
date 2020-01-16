@@ -422,6 +422,14 @@
             .header-rating {
                 flex: 0 0 184px;
                 padding-left: 80px;
+                position: relative;
+
+                .rating-source {
+                    position: absolute;
+                    z-index: 9;
+                    width: 100%;
+                    height: 100%;
+                }
 
                 .rating-box {
                     display: flex;

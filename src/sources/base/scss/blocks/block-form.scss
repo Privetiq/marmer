@@ -37,6 +37,35 @@
                 transform: translate(-50%, -50%);
                 z-index: -1;
             }
+
+            &.sent {
+                .form-body-success {
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 10;
+                    @include trans;
+                }
+            }
+
+            &.failed {
+                .form-body-error {
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 10;
+                    @include trans;
+                }
+            }
+
+            &.sent, &.failed {
+                .cf7mls_back,
+                .wpcf7-submit {
+                    display: none !important;
+                }
+            }
+
+            .wpcf7-response-output {
+                display: none !important;
+            }
         }
 
         &.demo-form {
@@ -407,23 +436,10 @@
             margin: 0 -50px;
 
             //class to active "thank you" wrapper
-            &.success {
-                .form-body-success {
-                    opacity: 1;
-                    visibility: visible;
-                    z-index: 10;
-                    @include trans;
-                }
-            }
 
-            &.error {
-                .form-body-error {
-                    opacity: 1;
-                    visibility: visible;
-                    z-index: 10;
-                    @include trans;
-                }
-            }
+            //&.error {
+            //
+            //}
             
             .form-body-box {
                 position: relative;

@@ -445,7 +445,7 @@
                         color: #484343;
                         font: 700 16.2px $bf;
                         background: url(../img/rating-icon-bg.png) no-repeat center center;
-                        background-size: 100% 100%;
+                        background-size: contain;
                         margin-right: 10px;
                     }
 
@@ -519,10 +519,6 @@
                     .menu {
                         justify-content: center;
                     }
-                }
-
-                .header-rating {
-                    display: none;
                 }
             }
         }

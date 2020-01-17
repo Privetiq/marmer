@@ -420,15 +420,13 @@
             }
 
             .header-rating {
-                flex: 0 0 184px;
+                flex: 0 0 200px;
                 padding-left: 80px;
                 position: relative;
 
-                .rating-source {
-                    position: absolute;
-                    z-index: 9;
-                    width: 100%;
-                    height: 100%;
+                .rating-box {
+                    width: 200px;
+                    height: 90px;
                 }
             }
         }
@@ -438,16 +436,6 @@
 @media only screen and (max-width: 1600px) {
     &.block-header {
         padding: 0 30px;
-
-        .header-wrapper {
-            .header-container {
-                .header-menu {
-                    .menu {
-                        justify-content: center;
-                    }
-                }
-            }
-        }
     }
 }
 

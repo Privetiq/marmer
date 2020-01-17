@@ -80,6 +80,85 @@
             }
         }
 
+        .custom-container {
+            display: block;
+            position: relative;
+            padding: 55px 0;
+
+            .custom-block {
+                display: flex;
+                align-items: stretch;
+                position: relative;
+                flex: 1 1 100%;
+                border-radius: 14px;
+                background: url(../img/form-body-bg1.png) no-repeat center center / cover;
+                overflow: hidden;
+                z-index: 2;
+
+                .image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 0 1 50%;
+                    max-height: 450px;
+                    overflow: hidden;
+
+                    img {
+                        display: block;
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    align-items: center;
+                    flex: 0 1 50%;
+                    padding: 50px;
+
+                    ul {
+                        li {
+                            position: relative;
+                            color: #0e1d2d;
+                            font: 600 16px/34px $bf;
+                            padding-left: 54px;
+                            margin-bottom: 20px;
+
+                            &:before {
+                                display: block;
+                                position: absolute;
+                                content: url(../img/check-list-icon2.svg);
+                                width: 34px;
+                                height: 34px;
+                                top: 0;
+                                left: 0;
+                                border-radius: 50%;
+                                background: #FFD688;
+                                color: #0e1d2d;
+                                font-size: 20px;
+                                line-height: 34px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 40px;
+                right: 40px;
+                bottom: 0;
+                background: url(../img/quote-bg.png) no-repeat center center;
+                background-size: cover;
+                border-radius: 14px;
+                box-shadow: 0px 16px 37.6px 2.4px #45535e2b,0px 16px 34px 6px #45535e38;
+            }
+        }
+
         @media only screen and (max-width: 992px) {
             .title {
                 font-size: 25.2px;
@@ -89,6 +168,26 @@
             .desc, .desc * {
                 font-size: 14.4px;
                 line-height: 23.4px;
+            }
+
+            .custom-container {
+                .custom-block {
+                    flex-wrap: wrap;
+
+                    .image {
+                        flex: 1 1 100%;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .info {
+                        flex: 1 1 100%;
+                        justify-content: center;
+                    }
+                }
             }
         }
 
@@ -108,6 +207,33 @@
             .title {
                 font-size: 16.2px;
                 line-height: 19.8px;
+            }
+
+            .custom-container {
+                padding: 40px 0;
+
+                .custom-block {
+                    .info {
+                        padding: 30px;
+
+                        ul {
+                            li {
+                                font-size: 14px;
+                                line-height: 18px;
+                                margin-bottom: 30px;
+
+                                &:before {
+                                    top: -8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:before {
+                    left: 30px;
+                    right: 30px;
+                }
             }
         }
     }

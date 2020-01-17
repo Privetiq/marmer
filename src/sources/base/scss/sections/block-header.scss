@@ -509,9 +509,36 @@
                         justify-content: center;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    &.block-header {
+        padding: 0 15px;
+
+        .header-wrapper {
+            .header-container {
+                .header-menu {
+                    .menu {
+                        justify-content: center;
+
+                        li {
+                            a {
+                                font: 400 15px/18px $bf;
+                            }
+                        }
+                    }
+                }
 
                 .header-rating {
-                    display: none;
+                    padding-left: 0;
+
+                    .rating-box {
+                        width: 184px;
+                        height: 80px;
+                    }
                 }
             }
         }

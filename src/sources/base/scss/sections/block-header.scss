@@ -422,6 +422,14 @@
             .header-rating {
                 flex: 0 0 184px;
                 padding-left: 80px;
+                position: relative;
+
+                .rating-source {
+                    position: absolute;
+                    z-index: 9;
+                    width: 100%;
+                    height: 100%;
+                }
 
                 .rating-box {
                     display: flex;
@@ -446,7 +454,7 @@
                         color: #484343;
                         font: 700 16.2px $bf;
                         background: url(../img/rating-icon-bg.png) no-repeat center center;
-                        background-size: 100% 100%;
+                        background-size: contain;
                         margin-right: 10px;
                     }
 
@@ -467,9 +475,21 @@
                                 width: 14px;
                                 margin-right: 2px;
 
-                                img {
+                                &.star-full {
+                                    background: url(../img/star-icon1.png);
+                                    background-size: cover;
+                                }
+
+                                &.star-half {
+                                    background: url(../img/star-icon2.png);
+                                    background-size: cover;
+                                }
+
+                                &:before {
+                                    content: '';
                                     display: block;
-                                    width: 100%;
+                                    width: 14px;
+                                    height: 14px;
                                 }
                             }
                         }
@@ -522,8 +542,6 @@
             .header-container {
                 .header-menu {
                     .menu {
-                        justify-content: center;
-
                         li {
                             a {
                                 font: 400 15px/18px $bf;

@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
 
     //custom select
-    $('.select-box select, .wpcf7-select').each(function () {
+    $('.select-box select.wpcf7-select').each(function () {
         var $this = $(this), numberOfOptions = $(this).children('option').length;
 
         $this.addClass('select-hidden');

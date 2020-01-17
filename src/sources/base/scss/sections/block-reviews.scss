@@ -69,7 +69,8 @@
                         @include trans;
                     }
 
-                    .title {
+                    .title,
+                    .title span {
                         color: #192535;
                         font: 700 18px $bf;
                         margin-bottom: 10px;
@@ -120,7 +121,23 @@
                                 margin-bottom: 20px;
 
                                 .star {
+                                    width: 18px;
+                                    height: 18px;
                                     margin-right: 5px;
+                                    background-size: cover;
+
+                                    &.star-full {
+                                        background: url(../img/star1.svg);
+                                    }
+
+                                    &.star-empty {
+                                        background: url(../img/star2.svg);
+                                    }
+
+                                    &.star-half {
+                                        background: url(../img/star-2.png);
+
+                                    }
                                 }
                             }
 

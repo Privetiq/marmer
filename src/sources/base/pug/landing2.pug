@@ -42,66 +42,10 @@ block content
                                     .form-col
                                         input(name="phone", type="text", placeholder="Phone")
                                         .error-msg Enter correct phone
-                                //- .form-row
-                                //-     .form-col
-                                //-         button.in-btn.sub(type="button") -
-                                //-         input.input-number(type="text" value="1" min="1" max="9", maxlength="1", readonly="")
-                                //-         button.in-btn.add(type="button") +
-
-                                //- .form-row
-                                //-     .form-col
-                                //-         button.in-btn.sub(type="button") -
-                                //-         span.wpcf7-form-control-wrap.number-232
-                                //-             input(type="number" name="number-232" value="1" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number" aria-invalid="false")
-                                //-         button.in-btn.add(type="button") +
-
-                                //- .form-row
-                                //-     .form-col
-                                //-         .select-box
-                                //-             select.custom-select
-                                //-                 option(value="") Option 1
-                                //-                 option(value="", selected="") Option 2
-                                //-                 option(value="") Option 3
-                                //-                 option(value="") Option 4
-
-                                //- .form-row
-                                //-     .form-col
-                                //-         select.wpcf7-select
-                                //-             option(value="") Option 1
-                                //-             option(value="", selected="") Option 2
-                                //-             option(value="") Option 3
-                                //-             option(value="") Option 4
-                                
-                                //- .form-row
-                                //-     .form-col
-                                //-         input.radio(id="radio1", name="radio1", type="radio", checked="")
-                                //-         label(for="radio1") Yes
-                                //-     .form-col
-                                //-         input.radio(id="radio2", name="radio1", type="radio")
-                                //-         label(for="radio2") No
                                 .form-row
                                     .form-col
                                         textarea(name="message", placeholder="Message")
                                         .error-msg Enter some message
-
-                                //- .form-row
-                                //-     .form-col
-                                //-         span.wpcf7-form-control-wrap.menu-48
-                                //-             select(name="menu-48" class="wpcf7-form-control wpcf7-select" aria-invalid="false")
-                                //-                 option(value="option 1") option 1
-                                //-                 option(value="option 2", selected) option 2
-                                //-                 option(value="option 3") option 3
-
-                                //- .form-row
-                                //-     .form-col.custom-radio
-                                //-         span.wpcf7-form-control-wrap.radio-692
-                                //-             span.wpcf7-form-control.wpcf7-radio
-                                //-                 span.wpcf7-list-item.first
-                                //-                     input(type="radio" name="radio-692" value="First Option" checked="checked")
-                                //-                     span.wpcf7-list-item-label First Option
-                                //-                 span.wpcf7-list-item.last
-                                //-                     input(type="radio" name="radio-692" value="Second")
-                                //-                     span.wpcf7-list-item-label Second
                             
                             .form-body-success
                                 .main-icon 
@@ -255,14 +199,34 @@ block content
                                 .form-row
                                     .form-col
                                         input(name="fullname", type="text", placeholder="Full Name")
-                                        .error Please, enter correct name
+                                        .error-msg Please, enter correct name
                                     .form-col
                                         input(name="email", type="text", placeholder="Email")
-                                        .error Please, enter correct email
+                                        .error-msg Please, enter correct email
                                     .form-col
                                         button.stl-btn2(type="submit")
                                             | Verzenden
                                             i.icon: include ../resources/assets/img/arrow-right.svg
+
+                        .form-body-success
+                            .main-icon 
+                                .icon-bg: img(src="assets/img/step-icon-bg3.png", alt="")
+                                .icon-img: img(src="assets/img/thank-icon.png", alt="")
+                            .main-title Thank you for your request
+                            .main-subtitle Check your e-mail for further instructions
+                            a.stl-btn1(href="#")
+                                |   Verzenden
+                                i.icon: include ../resources/assets/img/arrow-right.svg
+
+                        .form-body-error
+                            .main-icon 
+                                .icon-bg: img(src="assets/img/step-icon-bg1.png", alt="")
+                                .icon-img: img(src="assets/img/error-icon.png", alt="")
+                            .main-title Something went wrong
+                            .main-subtitle Please come back and try again
+                            a.stl-btn1(href="#")
+                                |   Go back
+                                i.icon: include ../resources/assets/img/arrow-right.svg
 
     +text(false, 'Het onderhoud van een natuursteen vloer is belangrijk. Lees hier meer', 'Hoe u uw natuurstenen vloer onderhoudt, is belangrijk voor de levensduur. Wij onderhouden natuurstenen vloeren al ruim dertig jaar voor particulieren en bedrijven met producten en methodes die afkomstig zijn uit Spanje. Een prachtig land waar de meeste woningen en bedrijven een vloer van natuursteen hebben liggen. Ook in ons land hebben wij de voordelen van natuursteen ontdekt. Het is een ware lust voor het oog en relatief eenvoudig te onderhouden. Toch heeft u in een aantal gevallen een onderhoudsbedrijf nodig. Voor een kleine reparatie, renovatie of om de vloer weer glans te geven, bent u bij ons aan het juiste adres, want wij zijn de specialist op dit gebied. Wilt u weten wat de kosten zijn om uw vloer op te knappen? U kunt direct een offerte aanvragen of een afspraak maken, zodat wij de situatie ter plaatse kunnen bekijken.', '')
 

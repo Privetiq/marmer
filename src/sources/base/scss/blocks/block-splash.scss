@@ -80,12 +80,11 @@
     }
 
     &.splash3 {
+        max-width: 1920px;
         width: 100%;
 
         .splash-bg {
             width: 100%;
-            // max-width: 1920px;
-            // width: calc(100% + 50px);
 
             img {
                 -webkit-mask-image: url(../img/mask-bg3.png);
@@ -94,8 +93,7 @@
 
         .splash-img {
             width: 100%;
-            //max-width: 1920px;
-
+            
             img {
                 -webkit-mask-image: url(../img/mask-img3.png);
             }

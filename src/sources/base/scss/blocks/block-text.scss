@@ -13,6 +13,17 @@
             color: #0e1d2d;
             font: 700 32.4px/34.2px $bf;
             margin-bottom: 27px;
+
+            &.white {
+                color: #ffffff;
+            }
+
+            &.custom {
+                position: relative;
+                padding: 0 60px;
+                margin-bottom: 0;
+                z-index: 2;
+            }
         }
 
         .desc, .desc * {
@@ -83,7 +94,7 @@
         .custom-container {
             display: block;
             position: relative;
-            padding: 55px 0;
+            padding: 30px 0;
 
             .custom-block {
                 display: flex;
@@ -99,14 +110,20 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    position: relative;
                     flex: 0 1 50%;
-                    max-height: 450px;
+                    height: auto;
+                    max-height: 410px;
                     overflow: hidden;
 
                     img {
                         display: block;
-                        width: auto;
-                        height: 100%;
+                        position: absolute;
+                        max-width: 1000px;
+                        width: 100%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
                 }
 
@@ -114,30 +131,30 @@
                     display: flex;
                     align-items: center;
                     flex: 0 1 50%;
-                    padding: 50px;
+                    padding: 40px;
 
                     ul {
                         li {
                             position: relative;
                             color: #0e1d2d;
-                            font: 600 16px/34px $bf;
-                            padding-left: 54px;
+                            font: 600 16px/24px $bf;
+                            padding-left: 40px;
                             margin-bottom: 20px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
 
                             &:before {
                                 display: block;
                                 position: absolute;
-                                content: url(../img/check-list-icon2.svg);
-                                width: 34px;
-                                height: 34px;
+                                content: '';
+                                width: 24px;
+                                height: 24px;
                                 top: 0;
                                 left: 0;
                                 border-radius: 50%;
-                                background: #FFD688;
-                                color: #0e1d2d;
-                                font-size: 20px;
-                                line-height: 34px;
-                                text-align: center;
+                                background: #FFD688 url(../img/check-list-icon2.svg) no-repeat center center / 50%;
                             }
                         }
                     }
@@ -148,9 +165,9 @@
                 display: block;
                 position: absolute;
                 content: '';
-                top: 0;
-                left: 40px;
-                right: 40px;
+                top: -64px;
+                left: 30px;
+                right: 30px;
                 bottom: 0;
                 background: url(../img/quote-bg.png) no-repeat center center;
                 background-size: cover;
@@ -176,8 +193,13 @@
 
                     .image {
                         flex: 1 1 100%;
+                        max-height: 290px;
 
                         img {
+                            position: relative;
+                            top: inherit;
+                            left: inherit;
+                            transform: none;
                             width: 100%;
                             height: auto;
                         }
@@ -210,8 +232,6 @@
             }
 
             .custom-container {
-                padding: 40px 0;
-
                 .custom-block {
                     .info {
                         padding: 30px;
@@ -228,11 +248,6 @@
                             }
                         }
                     }
-                }
-
-                &:before {
-                    left: 30px;
-                    right: 30px;
                 }
             }
         }

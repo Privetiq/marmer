@@ -62,35 +62,35 @@ $(document).ready(function () {
         });
     });
 
-    $('.reviews-slider').slick({
-        prevArrow: $('.reviews-slider-container .slider-controls .slider-prev'),
-        nextArrow: $('.reviews-slider-container .slider-controls .slider-next'),
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '60px',
-        infinite: false, 
-        vertical: true,
-        adaptiveHeight: true,
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    centerPadding: '60px',
-                    vertical: false,
-                    arrows: false
-                }
-            }, {
-                breakpoint: 481,
-                settings: {
-                    centerMode: false,
-                    centerPadding: '0px',
-                    vertical: false,
-                    arrows: false
-                }
-            }
-        ]
-    });
+    // $('.reviews-slider').slick({
+    //     prevArrow: $('.reviews-slider-container .slider-controls .slider-prev'),
+    //     nextArrow: $('.reviews-slider-container .slider-controls .slider-next'),
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     centerMode: true,
+    //     centerPadding: '60px',
+    //     infinite: false,
+    //     vertical: true,
+    //     adaptiveHeight: true,
+    //     responsive: [
+    //         {
+    //             breakpoint: 769,
+    //             settings: {
+    //                 centerPadding: '60px',
+    //                 vertical: false,
+    //                 arrows: false
+    //             }
+    //         }, {
+    //             breakpoint: 481,
+    //             settings: {
+    //                 centerMode: false,
+    //                 centerPadding: '0px',
+    //                 vertical: false,
+    //                 arrows: false
+    //             }
+    //         }
+    //     ]
+    // });
 
     var maxHeight = -1;
     $('.slick-slide').each(function () {

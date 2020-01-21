@@ -19,7 +19,6 @@
     }
 
     .reviews-wrapper {
-        max-width: 1080px;
         width: 100%;
         margin: 0 auto;
 
@@ -56,7 +55,6 @@
 
             .reviews-slider {
                 position: relative;
-                max-width: 950px;
                 width: 100%;
 
                 .slide {
@@ -65,7 +63,7 @@
 
                     &.slick-current {
                         padding-left: 30px;
-                        padding-right: 90px;
+                        padding-right: 30px;
                         @include trans;
                     }
 
@@ -80,7 +78,6 @@
                         display: flex;
                         align-items: flex-start;
                         position: relative;
-                        max-width: 900px;
                         border-radius: 4px;
                         background: $wc;
                         box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
@@ -190,6 +187,25 @@
                     &:not(.slick-current) {
                         opacity: .5;
                         @include trans;
+                    }
+                }
+
+                .readmore {
+                    text-align: center;
+
+                    a {
+                        display: inline-block;
+                        width: auto;
+                        height: 46px;
+                        padding: 0 15px;
+                        border-radius: 4px;
+                        background: #ecae38;
+                        box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
+                        color: $wc;
+                        font: 600 15.3px/46px $bf;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        @include trans
                     }
                 }
             }

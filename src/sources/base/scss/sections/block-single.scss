@@ -3,6 +3,11 @@
     padding: 0 15px;
     margin-bottom: 72px;
 
+    &.border {
+        border-bottom: 1px solid #cccccc66;
+        padding-bottom: 70px;
+    }
+
     .single-wrapper {
         display: flex;
         justify-content: center;

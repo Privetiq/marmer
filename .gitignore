@@ -51,3 +51,7 @@ node_modules
 .tmp
 .sass-cache
 bower_components
+
+# Word-Press
+/wp/wp-config.php
+/wp/wp-content/uploads

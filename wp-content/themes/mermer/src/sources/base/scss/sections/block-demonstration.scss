@@ -1,0 +1,199 @@
+&.block-demonstration {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 72px;
+
+    .block-splash {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+    .demonstration-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .block-form {
+            .form {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+
+                .form-body {
+                    margin: 0 -72px;
+
+                    .form-body-box {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        flex: 1 1 100%;
+
+                        .form-title {
+                            margin-bottom: 18px;
+                        }
+
+                        .form-subtitle {
+                            margin-bottom: 27px;
+                        }
+
+                        .form-fields {
+                            flex: 0 1 75%;
+                        }
+
+                        &:after {
+                            left: 40px;
+                            right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            padding: 0 15px;
+
+            .block-form {
+                .form {
+                    .form-body {
+                        margin: 0 -40px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .block-form {
+                .form {
+                    .form-body {
+                        .form-body-box {
+                            .form-title {
+                                font-size: 25.2px;
+                                line-height: 25.2px;
+
+                                span {
+                                    font-size: 25.2px;
+                                    line-height: 25.2px;
+                                }
+                            }
+
+                            .form-subtitle {
+                                font-size: 16.2px;
+                                line-height: 18px;
+                            }
+
+                            .form-fields {
+                                .form-row {
+                                    flex-wrap: wrap;
+
+                                    .form-col {
+                                        flex: 1 1 100%;
+                                        margin-bottom: 10px;
+
+                                        input {
+                                            font-weight: 400;
+                                            text-align: center;
+
+                                            &::placeholder {
+                                                font-weight: 400;
+                                            }
+                                        }
+
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .block-form {
+                .form {
+                    .form-body {
+                        .form-body-box {
+                            padding: 30px;
+
+                            .form-title {
+                                font-size: 21.6px;
+                                line-height: 21.6px;
+
+                                span {
+                                    font-size: 21.6px;
+                                    line-height: 21.6px;
+                                }
+                            }
+
+                            .form-subtitle {
+                                font-size: 14.4px;
+                                line-height: 16.2px;
+                            }
+
+                            .form-fields {
+                                flex: 1 1 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .block-form {
+                .form {
+                    .form-body {
+                        .form-body-box {
+                            .form-title {
+                                font-size: 18px;
+                                line-height: 19.8px;
+                                margin-bottom: 15px;
+
+                                span {
+                                    font-size: 18px;
+                                    line-height: 19.8px;
+                                }
+                            }
+
+                            .form-subtitle {
+                                font-size: 12.6px;
+                                line-height: 14.4px;
+                                margin-bottom: 15px;
+                            }
+
+                            .form-fields {
+                                .form-row {
+                                    flex-wrap: wrap;
+
+                                    .form-col {
+                                        input {
+                                            height: 36px;
+                                            line-height: 36px;
+                                        }
+
+                                        button {
+                                            height: 36px;
+                                            font-size: 12.6px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 54px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 36px;
+    }
+}

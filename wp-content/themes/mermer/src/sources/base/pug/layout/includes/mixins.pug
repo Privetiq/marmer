@@ -1,0 +1,84 @@
+//-text block
+mixin text(pimg=false, title, desc, ...images)
+    section.block.block-text
+        .text-wrapper
+            .title=title
+            .desc=desc
+            if (pimg)
+                .text-slider-container
+                    .slider-controls
+                        .slider-control.slider-prev: include ../../../resources/assets/img/angle-left.svg
+                        .slider-control.slider-next: include ../../../resources/assets/img/angle-right.svg
+                    .slider-wrapper
+                        .text-slider.slider-dots
+                            each img in images
+                                .slide: .preview-image: img(src=img, alt="mixin image")
+            else
+                //-nothing
+
+mixin advmark(name)
+    .marker
+        i.icon: include ../../../resources/assets/img/checkbox.svg
+        span=name
+
+mixin step(cls, bgsrc, imgsrc, number, title, desc)
+    .step-line(class=cls)
+        .step-block
+            .icon-block
+                .icon-bg: img(src=bgsrc, alt="")
+                .icon-image: img(src=imgsrc, alt="")
+            .info-block
+                .top-line
+                    .number=number
+                    .title=title
+                .desc=desc
+
+mixin slide(title)
+    .slide
+        .title=title
+        .inner-wrapper
+            .image 8
+            .info
+                .stars
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star1.svg", alt="")
+                    .star: img(src="assets/img/star2.svg", alt="")
+                .theme Helemaal top!!!
+                .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .date 09.01.2020
+
+mixin stone(src, name)
+    .img: img(src=src, alt="stone preview")
+    .name=name
+
+mixin phone(href, phone)
+    .phone-container
+        a.phone(href=href)
+            i.icon: include ../../../resources/assets/img/phone-icon.svg
+            span= phone
+
+mixin email(href, email)
+    .email-container
+        a.email(href=href)
+            i.icon: include ../../../resources/assets/img/mail-icon.svg
+            span= email
+
+mixin ftmenu(name)
+    li: a(href="#")=name
+
+mixin advmark(name)
+    .marker
+        i.icon: include ../../../resources/assets/img/checkbox.svg
+        span=name
+
+mixin project
+    .project-block
+        .inner-block
+            .title Belgisch Hardsteen
+            .slider-wrapper
+                .project-slider.slider-dots
+                    .slide: .preview-image: img(src="assets/img/project-image.jpg", alt="project image")
+                    .slide: .preview-image: img(src="assets/img/project-image.jpg", alt="project image")
+                    .slide: .preview-image: img(src="assets/img/project-image.jpg", alt="project image")

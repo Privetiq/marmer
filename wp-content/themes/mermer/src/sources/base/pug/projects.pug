@@ -1,0 +1,126 @@
+extends layout/layout
+block title
+    title Marmer Behandelen | Projects
+block content
+    section.block.block-banner.with-splash
+        .bg-decoration: img(src="assets/img/decoration1.png", alt="decoration background")
+
+        .block.block-splash.splash2
+            .splash-bg: img(src="assets/img/splash-bg4.png", alt="splash background")
+            .splash-img 
+                img.shadow1(src="assets/img/mask-shadow3.png", alt="")
+                img.shadow2(src="assets/img/mask-shadow2.png", alt="")
+                img.image(src="assets/img/splash-img2.jpg", alt="splash image")
+
+        .banner-wrapper
+            .banner-info
+                .main-title Voorbeelden van onze projecten
+                .advantages-markers
+                    +advmark('Stofvrije werkwijze')
+                    +advmark('30 jaar ervaring')
+                    +advmark('Landelijk opererend')
+                    +advmark('Gratis proefstuk op locatie')
+                    +advmark('Meubilair kan in huis blijven ')
+            .banner-form
+                .block.block-form
+                    form.form.banner-form(action="#")
+                        .form-title
+                            | Vul uw gegevens in en ontvang binnen 
+                            span 24 uur een reactie.
+                        .form-body
+                            .form-body-box
+                                .form-row
+                                    .form-col
+                                        input(name="full name", type="text", placeholder="Full name")
+                                        .error-msg Enter full name
+                                .form-row
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error-msg Enter correct email
+                                    .form-col
+                                        input(name="phone", type="text", placeholder="Phone")
+                                        .error-msg Enter correct phone
+                                .form-row
+                                    .form-col
+                                        textarea(name="message", placeholder="Message")
+                                        .error-msg Enter some message
+                        .form-button
+                            button.stl-btn1(type="submit")
+                                |   Verzenden
+                                i.icon: include ../resources/assets/img/arrow-right.svg
+
+    +text(false, 'Voorbeelden van onze projecten', 'Hieronder vindt u voorbeelden van onze projecten terug Klik op een afbeelding voor de vergroting. Natuurstenen vloer weer als nieuw? Wilt u uw vloer ook laten stralen? We komen graag bij u langs om u verder te helpen met een passend advies & voorstel.')
+
+    section.block.block-relation
+        .relation-wrapper
+            .relation-container
+                .inner-box
+                    .title Stuur ons een email
+                    .desc Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+                    a.stl-btn2.bg2(href="#")
+                        | Verzenden
+                        i.icon: include ../resources/assets/img/arrow-right.svg
+
+    section.block.block-projects
+        .projects-wrapper
+            .inner-wrapper
+                +project
+                +project
+                +project
+                +project
+                +project
+                +project
+
+    section.block.block-reviews
+        .bg-decoration: img(src="assets/img/decoration2.png", alt="decoration background")
+
+        .reviews-wrapper
+            .main-title
+                .logo
+                    include ../resources/assets/img/reviews-icon.svg
+                | klanten 
+                span vertellen
+
+            .reviews-slider-container
+                .reviews-slider
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                    +slide('Abraham Lincoln, Function of this great person')
+                    +slide('Bob Marley, Function of this great person')
+                .slider-controls
+                    .slider-control.slider-prev: include ../resources/assets/img/arrow-up.svg
+                    .slider-control.slider-next: include ../resources/assets/img/arrow-down.svg
+
+    section.block.block-demonstration
+        .block.block-splash: .splash-img: img(src="assets/img/splash-bg3.png", alt="splash background")
+                
+        .demonstration-wrapper
+            .block.block-form
+                form.form.demo-form(action="#")
+                    .form-body
+                        .form-body-box
+                            .form-title
+                                | Boek een
+                                span grati
+                                | demonstratie
+                            
+                            .form-subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+
+                            .form-fields
+                                .form-row
+                                    .form-col
+                                        input(name="fullname", type="text", placeholder="Full Name")
+                                        .error Please, enter correct name
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error Please, enter correct email
+                                    .form-col
+                                        button.stl-btn2(type="submit")
+                                            | Verzenden
+                                            i.icon: include ../resources/assets/img/arrow-right.svg
+
+

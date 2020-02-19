@@ -1,0 +1,372 @@
+&.block-method {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 150px;
+    z-index: 1;
+
+    .method-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-title {
+            width: 100%;
+            color: #192535;
+            font: 700 32.4px/43.2px $bf;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            width: 100%;
+            color: #192535;
+            font: 300 18px/28px $bf;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .steps-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 1 100%;
+            position: relative;
+            padding-top: 72px;
+
+            .step-line {
+                display: flex;
+                flex: 1 1 100%;
+                position: relative;
+                margin-bottom: 54px;
+
+                &.left {
+                    justify-content: flex-start;
+
+                    .step-block {
+                        text-align: left;
+
+                        .icon-block {
+                            order: 1;
+                            margin-right: 23px;
+                        }
+
+                        .info-block {
+                            order: 2;
+                        }
+                    }
+                }
+
+                &.right {
+                    justify-content: flex-end;
+
+                    .step-block {
+                        text-align: right;
+
+                        .icon-block {
+                            order: 2;
+                            margin-left: 23px;
+                        }
+
+                        .info-block {
+                            justify-content: flex-end;
+                            order: 1;
+
+                            .top-line {
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
+                }
+
+                .step-block {
+                    display: flex;
+
+                    .icon-block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 190px;
+                        height: 190px;
+                        position: relative;
+
+                        .icon-bg {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            z-index: -1;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .icon-image {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            max-width: 75px;
+                            position: relative;
+                            z-index: 1;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .info-block {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex: 1 1;
+
+                        .top-line {
+                            display: flex;
+                            align-items: center;
+                            flex: 1 1 100%;
+                            margin-bottom: 22.5px;
+
+                            .grow {
+                                flex-grow: 1;
+                            }
+
+                            .number {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 44px;
+                                height: 44px;
+                                border-radius: 50%;
+                                background: $wc;
+                                box-shadow: 0px 16px 37.6px 2.4px #45535e2b;
+                                color: #192535;
+                                font: 600 21.6px $bf;
+                                margin-right: 12px;
+                            }
+
+                            .title {
+                                width: fit-content;
+                                color: #192535;
+                                font: 600 21.6px $bf;
+                            }
+                        }
+
+                        .desc, .desc * {
+                            flex: 0 1 344px;
+                            color: #192535;
+                            font: 300 15.3px $bf;
+                            padding-left: 12px;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    &:after {
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        height: 341px;
+                        top: 60%;
+                        left: 40px;
+                        right: 0px;
+                        background: url(../img/step-flow1.png) no-repeat center center;
+                        background-size: contain;
+                        overflow: hidden;
+                        z-index: -1;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &:after {
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        height: 438px;
+                        top: 94%;
+                        left: 0px;
+                        right: 40px;
+                        background: url(../img/step-flow2.png) no-repeat center center;
+                        background-size: contain;
+                        overflow: hidden;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1300px) {
+            .steps-wrapper {
+                .step-line {
+                    &:nth-child(1) {
+                        &:after {
+                            top: 55%;
+                            left: 60px;
+                            right: 60px;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .main-title {
+                font-size: 25.2px;
+            }
+
+            .steps-wrapper {
+                padding-top: 54px;
+
+                .step-line {
+                    .step-block {
+                        .icon-block {
+                            width: 162px;
+                            height: 162px;
+
+                        }
+
+                        .info-block {
+                            .top-line {
+                                .number {
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 16.2px;
+                                }
+
+                                .title {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        &:after {
+                            top: 55%;
+                            left: 60px;
+                            right: 60px;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .main-title {
+                font-size: 21.6px;
+            }
+
+            .subtitle {
+                font-size: 16.2px;
+                line-height: 19.8px;
+            }
+
+            .steps-wrapper {
+                padding-top: 36px;
+
+                .step-line {
+                    .step-block {
+                        text-align: left !important;
+                        
+                        .icon-block {
+                            width: 108px;
+                            height: 108px;
+                            order: 1 !important;
+                            margin-left: 0 !important;
+                            margin-right: 15px !important;
+
+                            .icon-image {
+                                max-width: 36px;
+                            }
+                        }
+
+                        .info-block {
+                            .top-line {
+                                justify-content: flex-start !important;
+                                margin-bottom: 18px;
+
+                                .title {
+                                    font-size: 16.2px;
+                                    line-height: 19.8px;
+                                }
+                            }
+
+                            .desc, .desc * {
+                                flex: 1 1 100%;
+                                font-size: 14.4px;
+                                line-height: 18px;
+                                padding-left: 12px !important;
+                            }
+                        }
+                    }
+
+                    &:after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .main-title {
+                font-size: 18px;
+            }
+
+            .subtitle {
+                font-size: 14.4px;
+                line-height: 18px;
+            }
+
+            .steps-wrapper {
+                padding-top: 27px;
+
+                .step-line {
+                    .step-block {
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        .icon-block {
+                            margin-bottom: 10px;
+                        }
+
+                        .info-block {
+                            flex: 1 1 100%;
+
+                            .top-line {
+                                justify-content: center !important;
+                                margin-bottom: 15px;
+
+                                .number {
+                                    width: 26px;
+                                    height: 26px;
+                                    font-size: 14.4px;
+                                }
+
+                                .title {
+                                    font-size: 14,4px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .desc, .desc * {
+                                font-size: 12.6px;
+                                line-height: 16.2px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 54px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 36px;
+    }
+}

@@ -1,0 +1,160 @@
+&.block-quote {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 72px;
+
+    .block-splash {
+        top: -20%;
+        z-index: -1;
+    }
+
+    .quote-wrapper {
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+
+        .quote-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 100%;
+            border-radius: 28px;
+            background: #172330 url(../img/quote-bg.png) no-repeat center center;
+            background-size: 100% 100%;
+            box-shadow: 0px 16px 37.6px 2.4px rgba(69, 83, 94, 0.17);
+            padding: 68px 27px;
+            overflow: hidden;
+
+            .inner-box {
+                display: flex;
+                align-items: center;
+                flex: 0 1 60%;
+
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 96px;
+                    height: 104px;
+                    margin-right: 27px;
+
+                    svg, img {
+                        width: 100%;
+                    }
+                }
+
+                .info {
+                    flex: 1 1;
+
+                    .title {
+                        flex: 1 1 100%;
+                        color: #ffd688;
+                        font: 400 20.7px/19.8px $bf;
+                        margin-bottom: 21.6px;
+                    }
+
+                    .number {
+                        color: #ffffff;
+                        font: 600 36px/36px $bf;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .quote-container {
+                .inner-box {
+                    flex: 0 1 80%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .quote-container {
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .info {
+                        .title {
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+
+                        .number {
+                            font-size: 32.4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .quote-container {
+                padding: 54px 18px;
+                border-radius: 24px;
+
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .icon {
+                        width: 72px;
+                        height: 72px;
+                        margin-right: 18px;
+
+                        svg {
+                            width: 100%;
+                        }
+                    }
+
+                    .info {
+                        .title {
+                            font-size: 16.2px;
+                            line-height: 16.2px;
+                        }
+
+                        .number {
+                            font-size: 25.2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .quote-container {
+                padding: 36px 15px;
+                border-radius: 14px;
+
+                .inner-box {
+                    flex: 1 1 100%;
+
+                    .icon {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    .info {
+                        .title {
+                            font-size: 14.4px;
+                            line-height: 14.4px;
+                        }
+
+                        .number {
+                            font-size: 16.2px;
+                            line-height: 19.8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 54px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 36px;
+    }
+}

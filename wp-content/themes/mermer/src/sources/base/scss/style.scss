@@ -1,0 +1,80 @@
+@import 'includes/vars';
+@import 'includes/resetter';
+@import 'includes/helpers';
+@import 'includes/placeholders';
+
+// COMMON
+@import 'includes/common';
+@import 'includes/wp-form';
+
+// DEV PAGES
+@import 'includes/dev-pages';
+
+html {
+
+    body {
+        &.opmenu {
+            overflow: hidden;
+        }
+    }
+
+    .main-wrapper {
+        position: relative;
+        overflow: hidden;
+
+        &.with-margin {
+            section {
+                position: relative;
+
+                &:first-child {
+                    margin-top: 207px;
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 1421px;
+                        top: -207px;
+                        left: 50%;
+                        background: url(../img/decoration4.png) no-repeat center top;
+                        background-size: cover;
+                        transform: translateX(-50%);
+                        z-index: -3;
+                    }
+                }
+            }
+        }
+
+        .desc {
+            a {
+                font-weight: 500 !important;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .block {
+        @import 'blocks/block-splash';
+        @import 'blocks/block-form';
+        @import 'blocks/block-text';
+        @import 'blocks/block-phone';
+        @import 'blocks/block-email';
+
+        @import 'sections/block-header';
+        @import 'sections/block-footer';
+        @import 'sections/block-banner';
+        @import 'sections/block-about';
+        @import 'sections/block-video';
+        @import 'sections/block-method';
+        @import 'sections/block-reviews';
+        @import 'sections/block-quote';
+        @import 'sections/block-relation';
+        @import 'sections/block-stones';
+        @import 'sections/block-demonstration';
+        @import 'sections/block-single';
+        @import 'sections/block-advantages';
+        @import 'sections/block-contacts';
+        @import 'sections/block-projects';
+    }
+}

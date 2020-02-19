@@ -1,0 +1,119 @@
+&.block-advantages {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 80px;
+
+    .advantages-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-title {
+            color: #0e1d2d;
+            font: 700 32.4px/34.2px $bf;
+            margin-bottom: 36px;
+        }
+
+        .desc, .desc * {
+            color: #0e1d2d;
+            font: 300 18px/35px $bf;
+            margin-bottom: 63px;
+        }
+
+        .advantages-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 1 100%;
+
+            .advantage-block {
+                flex: 0 1 50%;
+
+                .image-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 504px;
+                    width: 100%;
+                    border-radius: 7px;
+                    background: #ffffff;
+                    box-shadow: 0px 8px 40px 0px #6a6f812b;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .advantages-container {
+                .advantage-block {
+                    .check-list {
+                        margin-left: 27px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .main-title {
+                font-size: 25.2px;
+                line-height: 28.8px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .main-title {
+                font-size: 21.6px;
+                line-height: 25.2px;
+            }
+
+            .desc, .desc * {
+                font-size: 14.4px;
+                line-height: 25.2px;
+                margin-bottom: 15px;
+            }
+
+            .advantages-container {
+                .advantage-block {
+                    flex: 1 1 100%;
+                    margin-bottom: 15px;
+
+                    .image-wrapper {
+                        max-width: 100%;
+                    }
+
+                    .check-list {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .main-title {
+                font-size: 18px;
+                line-height: 21.6px;
+            }
+
+            .desc, .desc * {
+                font-size: 12.6px;
+                line-height: 16.2px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 72px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 36px;
+    }
+}

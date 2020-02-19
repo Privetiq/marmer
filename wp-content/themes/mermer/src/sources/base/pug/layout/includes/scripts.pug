@@ -1,0 +1,12 @@
+//- babel polyfill
+if (qdt_c.platform.libs.babel_polyfill)
+    script(src="assets/dist/babel-polyfill/polyfill.min.js")
+
+//- jquery
+if (qdt_c.platform.libs.jquery)
+    script(src="assets/dist/jquery/jquery.min.js")
+
+//- custom script
+script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt0DVEIbl-xXp-QB5k20dog3FyEY4R2XQ&callback=initMap&language=eng" async defer)
+script(src="assets/dist/slick/slick.min.js")
+script(src="assets/js/app.js")

@@ -1,0 +1,106 @@
+extends layout/layout
+block title
+    title Marmer Behandelen | Contacts
+block content
+    section.block.block-banner.with-splash
+        .bg-decoration: img(src="assets/img/decoration1.png", alt="decoration background")
+
+        .block.block-splash.splash4
+            .splash-bg: img(src="assets/img/splash-bg5.png", alt="splash background")
+            .splash-img
+                img.shadow1(src="assets/img/mask-shadow3.png", alt="")
+                img.shadow2(src="assets/img/mask-shadow4.png", alt="")
+                img.image(src="assets/img/splash-img3.jpg", alt="")
+
+        //- .block.block-splash
+        //-     .splash-bg: img(src="assets/img/splash-bg5.png", alt="splash background")
+        //-     .splash-img: img(src="assets/img/splash-img3.png", alt="splash image")
+
+        .banner-wrapper
+            .banner-info
+            .banner-form
+                .block.block-form
+                    form.form.banner-form(action="#")
+                        .form-title
+                            | Contact us for
+                            span any questions.
+                        .form-body
+                            .form-body-box
+                                .form-row
+                                    .form-col
+                                        input(name="full name", type="text", placeholder="Full name")
+                                        .error-msg Enter full name
+                                .form-row
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error-msg Enter correct email
+                                    .form-col
+                                        input(name="phone", type="text", placeholder="Phone")
+                                        .error-msg Enter correct phone
+                                .form-row
+                                    .form-col
+                                        textarea(name="message", placeholder="Message")
+                                        .error-msg Enter some message
+                        .form-button
+                            button.stl-btn1(type="submit")
+                                |   Verzenden
+                                i.icon: include ../resources/assets/img/arrow-right.svg
+
+    section.block.block-contacts
+        .contacts-wrapper
+            .contacts-inner-wrapper
+                .contacts-block
+                    .inner-wrapper
+                        .main-title Contacten
+                        .contact-block
+                            .contact-box
+                                .address 
+                                    | Jan van Duivenvoordestraat 31 
+                                    br
+                                    | 1067 MT Amsterdam
+                            .contact-box
+                                .title Klant vertelen
+                                .locate 
+                                    | Beoordeling door klanten: 9.2/10
+                                    br
+                                    | 133 beoordelingen
+                                +phone('tel:0858000007', '085 800 0007')
+                                +email('mailto:info@marmerbehandelen.nl', 'info@marmerbehandelen.nl')
+                        .contact-block
+                            .contact-box
+                                .title Follow
+                                ul.soc
+                                    li: a.fb(href="#"): include ../resources/assets/img/soc-icon1.svg
+                                    li: a.in(href="#"): include ../resources/assets/img/soc-icon2.svg
+
+                .contacts-block
+                    .inner-wrapper
+                        .main-title Actief in het gat Nederland
+                        .map-wrapper
+                            #map.map-box
+
+    section.block.block-demonstration
+        .demonstration-wrapper
+            .block.block-form
+                form.form.demo-form(action="#")
+                    .form-body
+                        .form-body-box
+                            .form-title
+                                | Boek een
+                                span grati
+                                | demonstratie
+                            
+                            .form-subtitle Ons bedrijf behandelt met veel zorg en expertise natuurstenen vloeren door heel Nederland.
+
+                            .form-fields
+                                .form-row
+                                    .form-col
+                                        input(name="fullname", type="text", placeholder="Full Name")
+                                        .error Please, enter correct name
+                                    .form-col
+                                        input(name="email", type="text", placeholder="Email")
+                                        .error Please, enter correct email
+                                    .form-col
+                                        button.stl-btn2(type="submit")
+                                            | Verzenden
+                                            i.icon: include ../resources/assets/img/arrow-right.svg

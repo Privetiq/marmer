@@ -53,6 +53,11 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+
+        <div class="banner-form">
+        <?php echo do_shortcode('[contact-form-7 id="9" title="main-form"]'); ?>
+        </div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

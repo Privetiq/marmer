@@ -2,8 +2,6 @@
 /**
  * mermer functions and definitions
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
  * @package mermer
  */
 
@@ -22,10 +20,11 @@ if ( ! function_exists( 'mermer_setup' ) ) :
 		 * If you're building a theme based on mermer, use a find and replace
 		 * to change 'mermer' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'mermer', get_template_directory() . '/languages' );
+		//If need translate theme, uncomment this and use .pot file
+		//load_theme_textdomain( 'mermer', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		// add_theme_support( 'automatic-feed-links' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -44,7 +43,9 @@ if ( ! function_exists( 'mermer_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'mermer' ),
+			'main-header-menu' => esc_html__( 'Primary', 'mermer' ),
+			'main-footer-menu' => esc_html__( 'Footer1', 'mermer' ),
+			'secondary-footer-menu' => esc_html__( 'Footer2', 'mermer' ),
 		) );
 
 		/*
@@ -74,8 +75,8 @@ if ( ! function_exists( 'mermer_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 174,
+			'width'       => 66,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -94,7 +95,7 @@ function mermer_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'mermer_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'mermer_content_width', 1280 );
 }
 add_action( 'after_setup_theme', 'mermer_content_width', 0 );
 
@@ -120,15 +121,23 @@ add_action( 'widgets_init', 'mermer_widgets_init' );
  * Enqueue scripts and styles.
  */
 function mermer_scripts() {
-	wp_enqueue_style( 'mermer-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'mermer-fonts', 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap' );
 
-	wp_enqueue_script( 'mermer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_style( 'mermer-slick', get_template_directory_uri() . '/dist/html/assets/dist/slick/slick.css' );
 
-	wp_enqueue_script( 'mermer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_style( 'mermer-slick-theme', get_template_directory_uri() . '/dist/html/assets/dist/slick/slick-theme.css' );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_style( 'mermer-style', get_template_directory_uri() . '/dist/html/assets/css/style.min.css' );
+
+	wp_enqueue_script( 'mermer-polyfil', get_template_directory_uri() . '/dist/html/assets/dist/babel-polyfill/polyfill.min.js', array(), '20200220', true );
+
+	wp_enqueue_script( 'mermer-jquery', get_template_directory_uri() . '/dist/html/assets/dist/jquery/jquery.min.js', array(), '20200220', true );
+
+	wp_enqueue_script( 'mermer-slick', get_template_directory_uri() . '/dist/html/assets/dist/slick/slick.min.js', array(), '20200220', true );
+
+	wp_enqueue_script( 'mermer-app', get_template_directory_uri() . '/dist/html/assets/js/app.js', array(), '20200220', true );
+
+	wp_enqueue_script( 'mermer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20200220', true );
 }
 add_action( 'wp_enqueue_scripts', 'mermer_scripts' );
 

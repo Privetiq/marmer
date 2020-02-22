@@ -1,63 +1,88 @@
-<?php
-/**
+<?php /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package mermer
- */
-
-?>
+ */ ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mermer' ); ?></a>
+<div class="main-wrapper">
+	<header class="block block-header">
+        <div class="header-wrapper">
+            <?php
+            // the_custom_logo();  //Можно будет допилить.
+            if ( is_front_page() && is_home() ) : //проверка что бы на главной логотип делать не ссылкой а span например, что бы не было цыкличности (для СЕО). Оставил цыкличную ссылку. ?>
+                <div class="header-logo"><a href="#"><img class="black" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/header-logo.png" alt="logo"><img class="white" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/header-logo2.png" alt="logo"></a></div>
+                <?php else : ?>
+                <div class="header-logo"><a href="#"><img class="black" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/header-logo.png" alt="logo"><img class="white" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/header-logo2.png" alt="logo"></a></div>
+                <?php  endif; ?>
+            <div class="header-container">
+                <button class="burger" type="button">
+                    <div class="burger-box"><span></span></div>
+                </button>
+                <div class="mobile-wrapper">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$mermer_description = get_bloginfo( 'description', 'display' );
-			if ( $mermer_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $mermer_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'main-header-menu',
+                        'container_class'        => 'header-menu',
+                        'menu_class'        => 'menu',
+                    ) );
+                    ?>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mermer' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+                    <div class="header-call"><a href="tel:0858000007">
+                            <div class="number">085 800 0007</div>
+                            <div class="name">bel gratis</div></a></div>
+                    <div class="header-rating">
+                        <div class="rating-box">
+                            <div class="icon">8,8</div>
+                            <div class="info">
+                                <div class="stars"><span class="star star-full"></span><span class="star star-full"></span><span class="star star-full"></span><span class="star star-full"></span><span class="star star-half"></span></div>
+                                <div class="number">1487</div>
+                                <div class="sub">beoordelingen</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .header-container -->
+        </div><!-- .header-wrapper -->
 
-        <div class="banner-form">
-        <?php echo do_shortcode('[contact-form-7 id="9" title="main-form"]'); ?>
-        </div>
+	</header><!-- .block-header -->
 
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+    <main class="block block-main">
+        <section class="block block-banner with-splash">
+            <div class="bg-decoration"><img src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/decoration1.png" alt="decoration background"></div>
+            <div class="block block-splash splash1">
+                <div class="splash-bg"><img src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/splash-bg1.png" alt="splash background"></div>
+                <div class="splash-img"><img class="shadow1" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/mask-shadow1.png" alt=""><img class="shadow2" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/mask-shadow2.png" alt=""><img class="image" src="<?php echo get_template_directory_uri(); ?>/dist/html/assets/img/splash-img1.jpg" alt=""></div>
+            </div>
+            <div class="banner-wrapper">
+                <div class="banner-info">
+                    <div class="main-title"><?php the_title(); ?></div>
+                    <?php
+                    $markers = get_field('benefits');
+                    if ($markers) { ?>
+                    <div class="advantages-markers">
+                        <?php
+                        foreach ($markers as $marker) { ?>
+                            <div class="marker"><i class="icon">
+			                        <?php get_template_part('template-parts/svg', 'ok');?>
+                                </i><span><?php echo $marker->post_title;?></span></div>
+                        <?php } ?>
+                    </div>
+                    <?php } ?>
+                </div>
+                <?php //@todo переделать на CF7 форме. ?>
+                <div class="banner-form">
+                    <div class="block block-form">
+	                    <?php echo do_shortcode('[contact-form-7 id="9" title="main-form"]'); ?>
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -137,7 +137,7 @@ function mermer_scripts() {
 
 	wp_enqueue_script( 'mermer-app', get_template_directory_uri() . '/dist/html/assets/js/app.js', array(), '20200220', true );
 
-	wp_enqueue_script( 'mermer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20200220', true );
+	wp_enqueue_script( 'mermer-added', get_template_directory_uri() . '/js/added.js', array(), '3', true );
 }
 add_action( 'wp_enqueue_scripts', 'mermer_scripts' );
 

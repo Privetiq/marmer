@@ -82,6 +82,7 @@
                 <div class="banner-form">
                     <div class="block block-form">
 	                    <?php echo do_shortcode('[contact-form-7 id="9" title="main-form"]'); ?>
+                        <style>#arrow {fill: #fff;stroke: #fff;stroke-width: .1px; fill-rule: evenodd;} .pvb-display-none {display: none !important;} #form-step-2 {display: none} </style>
                     </div>
                 </div>
             </div>

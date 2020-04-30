@@ -44,7 +44,7 @@
     "@mdi/font": "^3.6.95",
     "angular": "^1.7.8",
     "bootstrap": "^3.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "slick-carousel": "^1.8.1",
     "underscore": "^1.9.1",
     "underscore.string": "^3.3.5"
